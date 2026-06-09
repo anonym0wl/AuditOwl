@@ -1,0 +1,7 @@
+pred_names order : ['vid00', 'vid01', 'vid02', 'vid03', 'vid04']
+dover_results    : [10, 20, 30, 40, 50]
+buggy assignment : {'vid00': 50, 'vid01': 10, 'vid02': 20, 'vid03': 30, 'vid04': 40}
+correct assignment: {'vid00': 10, 'vid01': 20, 'vid02': 30, 'vid03': 40, 'vid04': 50}
+vid00 assigned    : 50 (should be 10; got last element)
+mean(buggy)=30  mean(correct)=30
+=> per-video scores are MISASSIGNED (shifted by one); the AVERAGE is unaffected (same multiset).

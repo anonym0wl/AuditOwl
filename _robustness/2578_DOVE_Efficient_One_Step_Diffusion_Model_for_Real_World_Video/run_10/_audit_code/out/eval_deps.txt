@@ -1,0 +1,8 @@
+ABSENT   finetune/scripts/RAFT dir (eval_ewarp sys.path + chdir target)
+ABSENT   ewarp.py module anywhere in repo (eval_ewarp imports it)
+ABSENT   finetune/scripts/models/raft-things.pth (eval_ewarp default --model)
+PRESENT  finetune/utils/RAFT/raft-things.pth (actual checkpoint location)
+ABSENT   DOVER package dir in repo (eval_dover imports DOVER.*)
+ABSENT   DOVER under finetune/scripts (cwd after chdir)
+ABSENT   finetune/scripts/VBench dir (eval_vbench chdir target)
+ABSENT   pyiqa pinned/listed in requirements.txt (eval_metrics imports pyiqa)

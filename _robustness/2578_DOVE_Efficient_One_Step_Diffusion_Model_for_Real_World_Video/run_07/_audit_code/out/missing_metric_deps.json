@@ -1,0 +1,35 @@
+{
+  "fastervqa_python_hits": [],
+  "import_path_checks": [
+    [
+      "eval_dover.py -> finetune/scripts/DOVER/",
+      false
+    ],
+    [
+      "eval_ewarp.py -> finetune/scripts/RAFT/ (chdir target)",
+      false
+    ],
+    [
+      "eval_ewarp.py -> finetune/scripts/RAFT/ewarp.py",
+      false
+    ],
+    [
+      "any ewarp.py in repo",
+      false
+    ],
+    [
+      "eval_vbench.py -> finetune/scripts/VBench/",
+      false
+    ],
+    [
+      "eval_ewarp default --model finetune/scripts/models/raft-things.pth",
+      false
+    ],
+    [
+      "actual raft-things.pth location(s)",
+      [
+        "finetune/utils/RAFT/raft-things.pth"
+      ]
+    ]
+  ]
+}

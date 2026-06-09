@@ -1,0 +1,8 @@
+pred=results/DOVE/UDM10                  gt=datasets/test/UDM10/GT         ok
+pred=results/DOVE/SPMCS                  gt=datasets/test/UDM10/GT         MISMATCH
+pred=results/DOVE/YouHQ40                gt=datasets/test/UDM10/GT         MISMATCH
+pred=results/DOVE/RealVSR                gt=datasets/test/UDM10/GT         MISMATCH
+pred=results/DOVE/MVSR4x                 gt=datasets/test/UDM10/GT         MISMATCH
+pred=results/DOVE/VideoLQ                gt=datasets/test/UDM10/GT         MISMATCH
+
+Total calls: 6; mismatches: 5

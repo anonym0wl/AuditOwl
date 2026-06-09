@@ -1,0 +1,12 @@
+check,value,detail
+ewarp_module_present,False,[]
+DOVER_package_present,False,imported at eval_dover.py:150 'from DOVER...'
+VBench_package_present,False,sys.path.append at eval_vbench.py:19-20
+eval_ewarp_chdir_RAFT_at_repo_root_exists,False,eval_ewarp.py:147 joins original_dir+'RAFT'
+RAFT_actual_at_finetune_utils,True,actual location finetune/utils/RAFT
+eval_ewarp_default_raft_weights_exist,False,default --model finetune/scripts/models/raft-things.pth
+eval_dover_uses_i_minus_1_index,True,results[name]=dover_results[i-1] under enumerate from 0
+inference_sh_num_gt_lines,6,"[(11, '--gt datasets/test/UDM10/GT \\'), (23, '--gt datasets/test/UDM10/GT \\'), (35, '--gt datasets/test/UDM10/GT \\'), (48, '--gt datasets/test/UDM10/GT \\'), (61, '--gt datasets/test/UDM10/GT \\'), (73, '--gt datasets/test/UDM10/GT \\')]"
+inference_sh_gt_all_UDM10,True,6/6 --gt lines point to UDM10/GT
+inference_sh_pred_datasets_with_wrong_gt,5,"SPMCS \,YouHQ40 \,RealVSR \,MVSR4x \,VideoLQ \"
+pipeline_any_term_present,False,"{'aesthetic': False, 'scenedetect': False, 'scene detect': False, 'motion mask': False, 'bounding box': False, 'motion area': False}"

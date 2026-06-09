@@ -1,0 +1,14 @@
+check,value,detail
+ewarp.py module file present,False,NONE
+'def Ewarp' defined anywhere,False,NONE
+finetune/scripts/RAFT exists (eval_ewarp chdir target),False,expected by eval_ewarp.py line 147-148
+finetune/scripts/models/raft-things.pth exists (eval_ewarp default --model),False,actual is finetune/utils/RAFT/raft-things.pth
+finetune/utils/RAFT/raft-things.pth exists,True,
+finetune/scripts/VBench exists (eval_vbench chdir target),False,expected by eval_vbench.py line 146-147
+DOVER package vendored in repo,False,eval_dover.py imports DOVER.evaluate_a_set_of_videos
+FasterVQA computation code present (.py),False,NONE
+DOVER per-sample mapping correct (results[name]=dover_results[i-1]),False,"{'vid0': 'score_for_vid2', 'vid1': 'score_for_vid0', 'vid2': 'score_for_vid1'}"
+DOVER average unaffected by i-1 offset,True,0.8 vs 0.8
+'diffusers' pinned in requirements.txt,False,needed for CogVideoX pipeline/scheduler
+'pyiqa' in requirements.txt,False,needed for all reported IQA metrics
+Sec 3.3 video-processing-pipeline code present,False,NONE

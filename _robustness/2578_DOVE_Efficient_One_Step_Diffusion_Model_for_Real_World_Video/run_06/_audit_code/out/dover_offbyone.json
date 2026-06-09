@@ -1,0 +1,20 @@
+{
+  "buggy_per_sample": {
+    "001": 50.0,
+    "002": 10.0,
+    "003": 20.0,
+    "004": 30.0,
+    "005": 40.0
+  },
+  "correct_per_sample": {
+    "001": 10.0,
+    "002": 20.0,
+    "003": 30.0,
+    "004": 40.0,
+    "005": 50.0
+  },
+  "per_sample_matches_correct": false,
+  "buggy_mean": 30.0,
+  "correct_mean": 30.0,
+  "mean_unchanged": true
+}

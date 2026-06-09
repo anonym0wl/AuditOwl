@@ -1,0 +1,56 @@
+{
+  "eval_blocks": [
+    [
+      "results/DOVE/UDM10",
+      "datasets/test/UDM10/GT"
+    ],
+    [
+      "results/DOVE/SPMCS",
+      "datasets/test/UDM10/GT"
+    ],
+    [
+      "results/DOVE/YouHQ40",
+      "datasets/test/UDM10/GT"
+    ],
+    [
+      "results/DOVE/RealVSR",
+      "datasets/test/UDM10/GT"
+    ],
+    [
+      "results/DOVE/MVSR4x",
+      "datasets/test/UDM10/GT"
+    ],
+    [
+      "results/DOVE/VideoLQ",
+      "datasets/test/UDM10/GT"
+    ]
+  ],
+  "mismatches": [
+    {
+      "pred_dataset": "SPMCS",
+      "gt_path": "datasets/test/UDM10/GT",
+      "gt_dataset": "UDM10"
+    },
+    {
+      "pred_dataset": "YouHQ40",
+      "gt_path": "datasets/test/UDM10/GT",
+      "gt_dataset": "UDM10"
+    },
+    {
+      "pred_dataset": "RealVSR",
+      "gt_path": "datasets/test/UDM10/GT",
+      "gt_dataset": "UDM10"
+    },
+    {
+      "pred_dataset": "MVSR4x",
+      "gt_path": "datasets/test/UDM10/GT",
+      "gt_dataset": "UDM10"
+    },
+    {
+      "pred_dataset": "VideoLQ",
+      "gt_path": "datasets/test/UDM10/GT",
+      "gt_dataset": "UDM10"
+    }
+  ],
+  "n_mismatch": 5
+}

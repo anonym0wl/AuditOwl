@@ -1,0 +1,18 @@
+{
+  "fastervqa_create_metric": {
+    "fastervqa": [
+      "README.md"
+    ],
+    "fast_vqa": [],
+    "FAST-VQA": []
+  },
+  "DOVER_package_dir": false,
+  "ewarp_module_files": {
+    "def Ewarp": []
+  },
+  "vbench_dir": false,
+  "scripts_RAFT_dir": false,
+  "scripts_models_raft_pth": false,
+  "utils_RAFT_raft_pth": true,
+  "pyiqa_in_requirements": false
+}
