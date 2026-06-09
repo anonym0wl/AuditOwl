@@ -1,0 +1,6 @@
+ED loop iterates over ori_data.shape[0] = 30 (real windows); generated has 100 samples -> 70 generated samples are never compared, and real window i is paired with generated sample i by raw index.
+Index-pairing ori[i] vs gen[i] runs without error for i<30: True
+StandardScaler output range = [-3.270, 3.482] (NOT within [0,1] as the paper's ED definition states).
+StandardScaler column means ~0: max|mean|=8.33e-16; this scales per-timestamp across windows, not per-series to [0,1].
+reshape RAISED ValueError -> SHAP-RE only handles single-channel (C=1) input. (cannot reshape array of size 22500 into shape (30,250))
+SHAP-RE reshape works only when n_channels==1 (drops the channel axis).

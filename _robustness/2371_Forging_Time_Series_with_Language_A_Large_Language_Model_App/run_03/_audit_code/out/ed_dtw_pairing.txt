@@ -1,0 +1,11 @@
+Case A: synthetic set == real set, only the row order differs.
+  ED(real, real in same order)    = 0.000000
+  ED(real, real in shuffled order)= 5.644695
+  -> If these differ, calculate_ed pairs sample i of real with sample i
+     of synthetic by array index (not a distributional comparison).
+
+Case B: 30 real vs 100 synthetic (paper's multisample/univariate counts).
+  ED(real[30], gen[100])      = 6.451369
+  ED(real[30], gen[:30])      = 6.451369
+  -> Identical => synthetic rows 30..99 are never used; ED uses only the
+     first 30 synthetic rows, paired by index to the 30 real rows.

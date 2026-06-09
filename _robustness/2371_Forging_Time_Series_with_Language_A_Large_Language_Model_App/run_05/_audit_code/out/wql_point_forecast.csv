@@ -1,0 +1,5 @@
+fact,value
+compute_wql_uses_same_pred_for_all_quantiles,True
+wql_value,0.517967
+wql_is_function_of_point_error_only,True
+note,standard WQL needs predicted quantiles; here only a point forecast exists

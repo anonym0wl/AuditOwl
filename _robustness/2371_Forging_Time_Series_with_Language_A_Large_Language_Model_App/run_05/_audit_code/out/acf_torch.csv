@@ -1,0 +1,3 @@
+fact,value
+acf_runs_without_error,True
+output_shape,"(64, 1)"

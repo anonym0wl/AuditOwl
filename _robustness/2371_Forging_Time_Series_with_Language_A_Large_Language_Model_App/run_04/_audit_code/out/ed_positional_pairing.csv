@@ -1,0 +1,8 @@
+key,value
+n_original_samples,30
+n_generated_samples,100
+generated_samples_used_by_ED,30
+generated_samples_ignored,70
+ED_default_order,6.516077
+ED_after_permuting_generated_rows,6.494688
+ED_changes_with_generated_order,True

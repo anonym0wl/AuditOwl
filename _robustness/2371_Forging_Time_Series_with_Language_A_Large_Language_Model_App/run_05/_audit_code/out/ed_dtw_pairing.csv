@@ -1,0 +1,8 @@
+fact,value
+n_original_windows,30
+n_generated_samples,100
+n_pairs_actually_compared (==ori.shape[0]),30
+generated_samples_ignored (n_gen - n_pairs),70
+ED_with_natural_order,22.28591
+ED_with_permuted_generated_rows,22.440207
+ED_changes_under_permutation,True

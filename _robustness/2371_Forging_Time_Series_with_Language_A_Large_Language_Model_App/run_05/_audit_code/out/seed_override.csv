@@ -1,0 +1,7 @@
+fact,value
+SDForger_called_with_seed_kwarg,False
+SDForger_default_seed_when_no_kwarg,42
+set_seed_uses_self.seed_calls,np.random.seed(self.seed); random.seed(self.seed); torch.manual_seed(self.seed)
+rand_after_config_seed_54,0.420183
+rand_after_sdforger_seed_42,0.37454
+config_seed_overridden_by_42,True

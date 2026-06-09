@@ -1,0 +1,6 @@
+Python files scanned: 15
+Baseline generation/eval references in .py files: NONE
+Classifier/conditional-eval references in .py files: NONE
+Classifier refs in conditional_generation.ipynb cells: NONE
+Conclusion: baseline generation code = ABSENT
+Conclusion: conditional KNN-accuracy (Sec 6 / Fig 2, 0.81) eval code = ABSENT
