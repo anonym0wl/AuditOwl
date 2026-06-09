@@ -1,0 +1,9 @@
+{
+  "rtheta_hits_in_models": [],
+  "stage2_forward_feeds_only_vae(no_Rtheta)": true,
+  "test_eval_infer_scripts": [],
+  "dependency_spec_files": [],
+  "data_or_weight_dirs": [],
+  "weight_files": [],
+  "image_files": []
+}

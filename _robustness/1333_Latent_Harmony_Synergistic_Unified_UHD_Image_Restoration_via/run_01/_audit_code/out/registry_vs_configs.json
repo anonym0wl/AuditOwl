@@ -1,0 +1,199 @@
+{
+  "registered_archs": [
+    "LoRAConv2d",
+    "RAVAEHFLora",
+    "RAVAE_EQ",
+    "UNetDiscriminatorSN"
+  ],
+  "registered_models": [
+    "EQVAEModel",
+    "SRModel",
+    "VAEadapter"
+  ],
+  "config_type_refs": [
+    {
+      "file": "stage2_hflora.yml",
+      "line": 2,
+      "ref": "model_type: VAEadapter",
+      "value": "VAEadapter",
+      "verdict": "REGISTERED"
+    },
+    {
+      "file": "stage2_hflora.yml",
+      "line": 9,
+      "ref": "type: PairedImageDataset",
+      "value": "PairedImageDataset",
+      "verdict": "non-arch (skipped)"
+    },
+    {
+      "file": "stage2_hflora.yml",
+      "line": 13,
+      "ref": "type: disk",
+      "value": "disk",
+      "verdict": "non-arch (skipped)"
+    },
+    {
+      "file": "stage2_hflora.yml",
+      "line": 24,
+      "ref": "type: PairedImageDataset",
+      "value": "PairedImageDataset",
+      "verdict": "non-arch (skipped)"
+    },
+    {
+      "file": "stage2_hflora.yml",
+      "line": 28,
+      "ref": "type: disk",
+      "value": "disk",
+      "verdict": "non-arch (skipped)"
+    },
+    {
+      "file": "stage2_hflora.yml",
+      "line": 34,
+      "ref": "type: RAVAEHFLora",
+      "value": "RAVAEHFLora",
+      "verdict": "REGISTERED-ARCH"
+    },
+    {
+      "file": "stage2_hflora.yml",
+      "line": 42,
+      "ref": "type: RAVAE",
+      "value": "RAVAE",
+      "verdict": "UNREGISTERED-ARCH"
+    },
+    {
+      "file": "stage2_hflora.yml",
+      "line": 63,
+      "ref": "type: UNetDiscriminatorSN",
+      "value": "UNetDiscriminatorSN",
+      "verdict": "REGISTERED-ARCH"
+    },
+    {
+      "file": "stage2_hflora.yml",
+      "line": 89,
+      "ref": "type: L1Loss",
+      "value": "L1Loss",
+      "verdict": "non-arch (skipped)"
+    },
+    {
+      "file": "stage2_hflora.yml",
+      "line": 93,
+      "ref": "type: GANLoss",
+      "value": "GANLoss",
+      "verdict": "non-arch (skipped)"
+    },
+    {
+      "file": "stage2_hflora.yml",
+      "line": 98,
+      "ref": "type: Adam",
+      "value": "Adam",
+      "verdict": "non-arch (skipped)"
+    },
+    {
+      "file": "stage2_hflora.yml",
+      "line": 102,
+      "ref": "type: Adam",
+      "value": "Adam",
+      "verdict": "non-arch (skipped)"
+    },
+    {
+      "file": "stage2_hflora.yml",
+      "line": 106,
+      "ref": "type: Adam",
+      "value": "Adam",
+      "verdict": "non-arch (skipped)"
+    },
+    {
+      "file": "stage2_hflora.yml",
+      "line": 110,
+      "ref": "type: Adam",
+      "value": "Adam",
+      "verdict": "non-arch (skipped)"
+    },
+    {
+      "file": "stage2_hflora.yml",
+      "line": 115,
+      "ref": "type: CosineAnnealingRestartLR",
+      "value": "CosineAnnealingRestartLR",
+      "verdict": "non-arch (skipped)"
+    },
+    {
+      "file": "stage1_eqvae.yml",
+      "line": 2,
+      "ref": "model_type: EQVAEModel",
+      "value": "EQVAEModel",
+      "verdict": "REGISTERED"
+    },
+    {
+      "file": "stage1_eqvae.yml",
+      "line": 9,
+      "ref": "type: PairedImageDataset",
+      "value": "PairedImageDataset",
+      "verdict": "non-arch (skipped)"
+    },
+    {
+      "file": "stage1_eqvae.yml",
+      "line": 13,
+      "ref": "type: disk",
+      "value": "disk",
+      "verdict": "non-arch (skipped)"
+    },
+    {
+      "file": "stage1_eqvae.yml",
+      "line": 24,
+      "ref": "type: PairedImageDataset",
+      "value": "PairedImageDataset",
+      "verdict": "non-arch (skipped)"
+    },
+    {
+      "file": "stage1_eqvae.yml",
+      "line": 28,
+      "ref": "type: disk",
+      "value": "disk",
+      "verdict": "non-arch (skipped)"
+    },
+    {
+      "file": "stage1_eqvae.yml",
+      "line": 34,
+      "ref": "type: RAVAE_EQ",
+      "value": "RAVAE_EQ",
+      "verdict": "REGISTERED-ARCH"
+    },
+    {
+      "file": "stage1_eqvae.yml",
+      "line": 68,
+      "ref": "type: L1Loss",
+      "value": "L1Loss",
+      "verdict": "non-arch (skipped)"
+    },
+    {
+      "file": "stage1_eqvae.yml",
+      "line": 72,
+      "ref": "type: KlLoss",
+      "value": "KlLoss",
+      "verdict": "non-arch (skipped)"
+    },
+    {
+      "file": "stage1_eqvae.yml",
+      "line": 106,
+      "ref": "type: Adam",
+      "value": "Adam",
+      "verdict": "non-arch (skipped)"
+    },
+    {
+      "file": "stage1_eqvae.yml",
+      "line": 111,
+      "ref": "type: CosineAnnealingRestartLR",
+      "value": "CosineAnnealingRestartLR",
+      "verdict": "non-arch (skipped)"
+    }
+  ],
+  "unregistered": [
+    {
+      "file": "stage2_hflora.yml",
+      "line": 42,
+      "ref": "type: RAVAE",
+      "value": "RAVAE",
+      "verdict": "UNREGISTERED-ARCH"
+    }
+  ]
+}
