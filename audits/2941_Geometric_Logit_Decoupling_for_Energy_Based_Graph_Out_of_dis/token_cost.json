@@ -1,0 +1,19 @@
+{
+  "folder": "2941_Geometric_Logit_Decoupling_for_Energy_Based_Graph_Out_of_dis",
+  "model": "claude-opus-4-8",
+  "audit_runs": 1,
+  "tokens": {
+    "input": 9902,
+    "output": 3749,
+    "cache_write": 118159,
+    "cache_read": 1143311
+  },
+  "total_tokens": 1275121,
+  "pricing_usd_per_mtok": {
+    "input": 15.0,
+    "output": 75.0,
+    "cache_write": 18.75,
+    "cache_read": 1.5
+  },
+  "estimated_cost_usd": 4.36
+}

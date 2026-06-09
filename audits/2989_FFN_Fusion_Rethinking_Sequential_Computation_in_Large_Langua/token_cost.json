@@ -1,0 +1,19 @@
+{
+  "folder": "2989_FFN_Fusion_Rethinking_Sequential_Computation_in_Large_Langua",
+  "model": "claude-opus-4-8",
+  "audit_runs": 1,
+  "tokens": {
+    "input": 8095,
+    "output": 10846,
+    "cache_write": 351598,
+    "cache_read": 1408331
+  },
+  "total_tokens": 1778870,
+  "pricing_usd_per_mtok": {
+    "input": 15.0,
+    "output": 75.0,
+    "cache_write": 18.75,
+    "cache_read": 1.5
+  },
+  "estimated_cost_usd": 9.64
+}
