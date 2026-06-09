@@ -1,0 +1,13 @@
+dataset,paper_table5_epochs,code_hardcoded_epochs,match
+census,5,5,YES
+backdoor,200,200,YES
+campaign,50,50,YES
+mnist,500,500,YES
+speech,500,500,YES
+optdigits,2000,2000,YES
+spambase,5000,5000,YES
+musk,5,5,YES
+internetads,50,50,YES
+donors,30,30,YES
+http,100,100,YES
+cover,10,10,YES

@@ -1,0 +1,23 @@
+parsed 47 hardcoded dataset epochs from FMAD/functions.py
+  census         paper=    5 code=5 OK
+  backdoor       paper=  200 code=200 OK
+  campaign       paper=   50 code=50 OK
+  mnist          paper=  500 code=500 OK
+  speech         paper=  500 code=500 OK
+  optdigits      paper= 2000 code=2000 OK
+  spambase       paper= 5000 code=5000 OK
+  musk           paper=    5 code=5 OK
+  internetads    paper=   50 code=50 OK
+  donors         paper=   30 code=30 OK
+  http           paper=  100 code=100 OK
+  cover          paper=   10 code=10 OK
+  fraud          paper=   75 code=75 OK
+  skin           paper=  110 code=110 OK
+  celeba         paper=    2 code=2 OK
+  smtp           paper=    2 code=2 OK
+  aloi           paper=  100 code=100 OK
+  shuttle        paper=  200 code=200 OK
+  magic.gamma    paper=   10 code=10 OK
+  mammography    paper=   20 code=20 OK
+MISMATCHES vs Table5(subset): NONE
+Note: no CSM / unsupervised-epoch-selection code found in repo (grep returned only comment hits).

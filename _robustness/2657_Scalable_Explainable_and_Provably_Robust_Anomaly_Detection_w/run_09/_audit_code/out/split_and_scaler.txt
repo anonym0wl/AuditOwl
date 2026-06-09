@@ -1,0 +1,6 @@
+dataset = 42_WBC; X=(223, 9), normals=213, anomalies=10
+train labels unique = [0] (should be [0] = normal-only)
+X_train rows = 106, X_test_normal rows = 107
+train/test-normal row overlap = 0 (should be 0)
+scaled-train mean abs = 0.0000 (≈0), std = 1.0000 (≈1)
+scaled-test  mean abs = 0.3566 (≠0 expected: scaler fit on train only)

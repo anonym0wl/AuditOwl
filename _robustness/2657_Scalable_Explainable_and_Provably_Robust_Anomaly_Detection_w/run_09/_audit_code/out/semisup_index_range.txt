@@ -1,0 +1,5 @@
+total MODEL_NAMES = 52
+force_inductive indices (expected to run) = [45, 46, 47, 48, 49, 50, 51] -> ['ABOD_semisup', 'COF_semisup', 'LOF_semisup', 'PCA_semisup', 'KPCA_semisup', 'KNN_semisup', 'INNE_semisup']
+run_semisupervise.sh launches j in {45..50} = [45, 46, 47, 48, 49, 50] -> ['ABOD_semisup', 'COF_semisup', 'LOF_semisup', 'PCA_semisup', 'KPCA_semisup', 'KNN_semisup']
+NOT launched (force-inductive index missing from loop) = [51] -> ['INNE_semisup']
+comment claims '7 models'; loop actually launches 6 models -> off-by-one = True

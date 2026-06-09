@@ -1,0 +1,6 @@
+run_knn.sh invokes python scripts: ['Full_experiments.py']
+  exists(Full_experiments.py) = False
+run_semisupervise.sh j-ranges: [('45', '50'), ('45', '50'), ('45', '50'), ('45', '50')]
+force_inductive indices = [45, 46, 47, 48, 49, 50, 51] -> ['ABOD_semisup', 'COF_semisup', 'LOF_semisup', 'PCA_semisup', 'KPCA_semisup', 'INNE_semisup', 'KNN_semisup']
+force_inductive indices NOT covered by run_semisupervise.sh = [51] -> ['KNN_semisup']
+run_knn.sh j-ranges: [('50', '50'), ('50', '50'), ('50', '50'), ('50', '50')] -> model at j=50 is 'INNE_semisup' (NOT KNN_semisup at 51)

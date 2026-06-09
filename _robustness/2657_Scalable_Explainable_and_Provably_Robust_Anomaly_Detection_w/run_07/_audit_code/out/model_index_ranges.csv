@@ -1,0 +1,5 @@
+bash_loop,indices,models_run
+run_main.sh {0..44},0..44,TCCM;VAE;SO_GAAL;MO_GAAL;AutoEncoder;DeepSVDD;LUNAR;DIF;ALAD;AE1SVM;AnoGAN;ABOD;COF;LOF;PCA;KPCA;KNN;INNE;CBLOF;IForest;LODA;FeatureBagging;Sampling;MCD;CD;ECOD;HBOS;OCSVM;KDE;GMM;QMCD;LMDD;DAGMM;GANomaly;NormalizingFlow;DROCC;DTEDDPM;DTEGaussian;DTEInverseGamma;DTECategorical;DTENonParametric;ICL;GOAD;SLAD;MCM
+run_semisupervise.sh {45..50},45..50,ABOD_semisup;COF_semisup;LOF_semisup;PCA_semisup;KPCA_semisup;INNE_semisup
+run_knn.sh {50..50},50..50,INNE_semisup
+force_inductive omitted by {45..50},51,KNN_semisup

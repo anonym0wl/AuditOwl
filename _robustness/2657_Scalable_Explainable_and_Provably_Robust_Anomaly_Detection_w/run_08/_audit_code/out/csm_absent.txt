@@ -1,0 +1,4 @@
+csm_pattern_hits=5
+hits=[('RobustnessStudy.py', 221, "with open(os.devnull, 'w') as f, redirect_stdout(f):  # Suppress output"), ('ContaminationStudies.py', 105, "with open(os.devnull, 'w') as f, redirect_stdout(f):  # Suppress output, namely omitting logs"), ('ContaminationStudies.py', 109, "with open(os.devnull, 'w') as f, redirect_stdout(f):  # Suppress output"), ('FullExperiments.py', 167, "with open(os.devnull, 'w') as f, redirect_stdout(f):"), ('FullExperiments.py', 171, "with open(os.devnull, 'w') as f, redirect_stdout(f):")]
+determine_FMAD_hyperparameters_present=True
+hardcoded_epoch_branches=47
