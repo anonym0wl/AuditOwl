@@ -1,0 +1,19 @@
+{
+  "folder": "2277_Weak_shot_Keypoint_Estimation_via_Keyness_and_Correspondence",
+  "model": "claude-opus-4-8",
+  "audit_runs": 1,
+  "tokens": {
+    "input": 9862,
+    "output": 8676,
+    "cache_write": 87470,
+    "cache_read": 1291165
+  },
+  "total_tokens": 1397173,
+  "pricing_usd_per_mtok": {
+    "input": 15.0,
+    "output": 75.0,
+    "cache_write": 18.75,
+    "cache_read": 1.5
+  },
+  "estimated_cost_usd": 4.38
+}
