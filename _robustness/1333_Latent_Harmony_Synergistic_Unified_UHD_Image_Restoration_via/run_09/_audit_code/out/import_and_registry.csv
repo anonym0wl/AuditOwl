@@ -1,0 +1,12 @@
+check,result,verdict
+init_imports_dot_test,True,from .test import * present in basicsr/__init__.py
+basicsr_test_py_exists,False,basicsr/test.py missing -> import basicsr raises ModuleNotFoundError
+arch_registered_names,"LoRAConv2d,RAVAEHFLora,RAVAE_EQ,UNetDiscriminatorSN",RAVAE_EQ registered but RAVAE NOT registered
+stage2_config_requires_RAVAE_type,True,stage2_hflora.yml sets vae_config.type: RAVAE
+RAVAE_resolvable,False,ARCH_REGISTRY.get('RAVAE') raises KeyError (RAVAE never defined)
+artefact::requirements_or_env,NONE,ABSENT
+artefact::test_or_inference_script,NONE,ABSENT
+artefact::pretrained_weights,NONE,ABSENT
+artefact::readme_with_instructions,README.md,present
+readme_content,'# Latent-Harmony',"README is a one-line title only; no install/data/run instructions, no results table"
+datasets_dir_present,False,"no datasets/ dir; configs point to ./datasets/{train,val} which do not exist"

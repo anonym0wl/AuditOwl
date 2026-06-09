@@ -1,0 +1,7 @@
+key,value
+registered_archs,LoRAConv2d;RAVAEHFLora;RAVAE_EQ;UNetDiscriminatorSN
+registered_models,EQVAEModel;SRModel;VAEadapter
+stage2_referenced_types,VAEadapter;PairedImageDataset;disk;PairedImageDataset;disk;RAVAEHFLora;RAVAE;vanilla;vanilla;pad;UNetDiscriminatorSN;L1Loss;GANLoss;hinge;Adam;Adam;Adam;Adam;CosineAnnealingRestartLR
+RAVAE_registered,False
+RAVAE_EQ_registered,True
+stage2_loads_RAVAE_via_get,RAVAE in stage2 vae_config.type -> ARCH_REGISTRY.get('RAVAE') raises KeyError
