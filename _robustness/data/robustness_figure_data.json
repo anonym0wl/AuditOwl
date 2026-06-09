@@ -1,0 +1,162 @@
+{
+  "overall_mean_detection": {
+    "merged": 0.38,
+    "strict": 0.2711864406779662
+  },
+  "by_severity_majority": {
+    "merged": {
+      "high": {
+        "mean_det": 0.7142857142857143,
+        "n": 14
+      },
+      "medium": {
+        "mean_det": 0.3733333333333333,
+        "n": 30
+      },
+      "low": {
+        "mean_det": 0.25555555555555554,
+        "n": 36
+      }
+    },
+    "strict": {
+      "high": {
+        "mean_det": 0.3148148148148148,
+        "n": 27
+      },
+      "medium": {
+        "mean_det": 0.3205128205128205,
+        "n": 39
+      },
+      "low": {
+        "mean_det": 0.2115384615384615,
+        "n": 52
+      }
+    }
+  },
+  "by_severity_x_confidence_merged": {
+    "high|high": {
+      "mean_det": 0.7142857142857143,
+      "n": 14
+    },
+    "medium|high": {
+      "mean_det": 0.3857142857142857,
+      "n": 28
+    },
+    "medium|medium": {
+      "mean_det": 0.3,
+      "n": 1
+    },
+    "medium|low": {
+      "mean_det": 0.1,
+      "n": 1
+    },
+    "low|high": {
+      "mean_det": 0.348,
+      "n": 25
+    },
+    "low|medium": {
+      "mean_det": 0.1,
+      "n": 5
+    },
+    "low|low": {
+      "mean_det": 0.0,
+      "n": 6
+    }
+  },
+  "stable_core": {
+    "merged": 15,
+    "merged_total": 80,
+    "strict": 9,
+    "strict_total": 118
+  },
+  "flaky": {
+    "merged": 47,
+    "strict": 85
+  },
+  "headlined_det": 0.42571428571428577,
+  "not_headlined_det": 0.06000000000000001,
+  "ac1_merged_mean": 0.4666596763368222,
+  "ac1_strict_mean": 0.48790399740083756,
+  "alpha_merged_mean": 0.35315994756366254,
+  "fp_vs_fn": {
+    "verifier_reject_total": 0,
+    "n_findings_total": 310,
+    "by_bucket": {
+      "singleton(1)": {
+        "n": 22,
+        "reject": 0,
+        "check_backed_pct": 31.818181818181817
+      },
+      "flaky(2-3)": {
+        "n": 46,
+        "reject": 0,
+        "check_backed_pct": 54.34782608695652
+      },
+      "mid(4-7)": {
+        "n": 97,
+        "reject": 0,
+        "check_backed_pct": 52.577319587628864
+      },
+      "core(8-10)": {
+        "n": 145,
+        "reject": 0,
+        "check_backed_pct": 71.03448275862068
+      }
+    },
+    "conclusion": "false-negative dominated: verifier rejects ~0 in every detection bucket; check-backing rises with reproducibility"
+  },
+  "ensemble_recall_vs_runs": [
+    0.5418080808080807,
+    0.7250953984287317,
+    0.8293063973063972,
+    0.8950644540644541,
+    0.9383890492223828,
+    0.9669278499278502,
+    0.985023569023569,
+    0.9954298540965208,
+    1.0,
+    1.0
+  ],
+  "per_paper": {
+    "1829": {
+      "count_cv": 0.31140917439720817,
+      "head_det": 0.27058823529411763,
+      "nothead_det": 0.0,
+      "ac1_merged": 0.4778796333200482,
+      "ac1_strict": 0.6017814186333792,
+      "alpha_merged": 0.15462542360660825
+    },
+    "1333": {
+      "count_cv": 0.13973664175919848,
+      "head_det": 0.5583333333333332,
+      "nothead_det": 0.10000000000000002,
+      "ac1_merged": 0.4985250737463129,
+      "ac1_strict": 0.43000838222967336,
+      "alpha_merged": 0.4974206349206397
+    },
+    "2657": {
+      "count_cv": 0.2541699457600955,
+      "head_det": 0.37500000000000006,
+      "nothead_det": 0.15000000000000002,
+      "ac1_merged": 0.4359497111790691,
+      "ac1_strict": 0.4962905950013899,
+      "alpha_merged": 0.3281327725772212
+    },
+    "2578": {
+      "count_cv": 0.21081851067789198,
+      "head_det": 0.5818181818181819,
+      "nothead_det": NaN,
+      "ac1_merged": 0.4018745081204839,
+      "ac1_strict": 0.4171766371091965,
+      "alpha_merged": 0.37469806763285196
+    },
+    "2371": {
+      "count_cv": 0.24325212770525997,
+      "head_det": 0.43571428571428567,
+      "nothead_det": 0.0,
+      "ac1_merged": 0.5190694553181971,
+      "ac1_strict": 0.49426295403054893,
+      "alpha_merged": 0.4109228390809918
+    }
+  }
+}

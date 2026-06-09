@@ -1,0 +1,80 @@
+{
+  "runs_per_paper": 10,
+  "papers": [
+    {
+      "paper": "1829_OLinear_A_Linear_Model_for_Time_Series_Forecasting_in_Orthog",
+      "runs": [
+        "_robustness/1829_OLinear_A_Linear_Model_for_Time_Series_Forecasting_in_Orthog/run_01",
+        "_robustness/1829_OLinear_A_Linear_Model_for_Time_Series_Forecasting_in_Orthog/run_02",
+        "_robustness/1829_OLinear_A_Linear_Model_for_Time_Series_Forecasting_in_Orthog/run_03",
+        "_robustness/1829_OLinear_A_Linear_Model_for_Time_Series_Forecasting_in_Orthog/run_04",
+        "_robustness/1829_OLinear_A_Linear_Model_for_Time_Series_Forecasting_in_Orthog/run_05",
+        "_robustness/1829_OLinear_A_Linear_Model_for_Time_Series_Forecasting_in_Orthog/run_06",
+        "_robustness/1829_OLinear_A_Linear_Model_for_Time_Series_Forecasting_in_Orthog/run_07",
+        "_robustness/1829_OLinear_A_Linear_Model_for_Time_Series_Forecasting_in_Orthog/run_08",
+        "_robustness/1829_OLinear_A_Linear_Model_for_Time_Series_Forecasting_in_Orthog/run_09",
+        "_robustness/1829_OLinear_A_Linear_Model_for_Time_Series_Forecasting_in_Orthog/run_10"
+      ]
+    },
+    {
+      "paper": "1333_Latent_Harmony_Synergistic_Unified_UHD_Image_Restoration_via",
+      "runs": [
+        "_robustness/1333_Latent_Harmony_Synergistic_Unified_UHD_Image_Restoration_via/run_01",
+        "_robustness/1333_Latent_Harmony_Synergistic_Unified_UHD_Image_Restoration_via/run_02",
+        "_robustness/1333_Latent_Harmony_Synergistic_Unified_UHD_Image_Restoration_via/run_03",
+        "_robustness/1333_Latent_Harmony_Synergistic_Unified_UHD_Image_Restoration_via/run_04",
+        "_robustness/1333_Latent_Harmony_Synergistic_Unified_UHD_Image_Restoration_via/run_05",
+        "_robustness/1333_Latent_Harmony_Synergistic_Unified_UHD_Image_Restoration_via/run_06",
+        "_robustness/1333_Latent_Harmony_Synergistic_Unified_UHD_Image_Restoration_via/run_07",
+        "_robustness/1333_Latent_Harmony_Synergistic_Unified_UHD_Image_Restoration_via/run_08",
+        "_robustness/1333_Latent_Harmony_Synergistic_Unified_UHD_Image_Restoration_via/run_09",
+        "_robustness/1333_Latent_Harmony_Synergistic_Unified_UHD_Image_Restoration_via/run_10"
+      ]
+    },
+    {
+      "paper": "2657_Scalable_Explainable_and_Provably_Robust_Anomaly_Detection_w",
+      "runs": [
+        "_robustness/2657_Scalable_Explainable_and_Provably_Robust_Anomaly_Detection_w/run_01",
+        "_robustness/2657_Scalable_Explainable_and_Provably_Robust_Anomaly_Detection_w/run_02",
+        "_robustness/2657_Scalable_Explainable_and_Provably_Robust_Anomaly_Detection_w/run_03",
+        "_robustness/2657_Scalable_Explainable_and_Provably_Robust_Anomaly_Detection_w/run_04",
+        "_robustness/2657_Scalable_Explainable_and_Provably_Robust_Anomaly_Detection_w/run_05",
+        "_robustness/2657_Scalable_Explainable_and_Provably_Robust_Anomaly_Detection_w/run_06",
+        "_robustness/2657_Scalable_Explainable_and_Provably_Robust_Anomaly_Detection_w/run_07",
+        "_robustness/2657_Scalable_Explainable_and_Provably_Robust_Anomaly_Detection_w/run_08",
+        "_robustness/2657_Scalable_Explainable_and_Provably_Robust_Anomaly_Detection_w/run_09",
+        "_robustness/2657_Scalable_Explainable_and_Provably_Robust_Anomaly_Detection_w/run_10"
+      ]
+    },
+    {
+      "paper": "2578_DOVE_Efficient_One_Step_Diffusion_Model_for_Real_World_Video",
+      "runs": [
+        "_robustness/2578_DOVE_Efficient_One_Step_Diffusion_Model_for_Real_World_Video/run_01",
+        "_robustness/2578_DOVE_Efficient_One_Step_Diffusion_Model_for_Real_World_Video/run_02",
+        "_robustness/2578_DOVE_Efficient_One_Step_Diffusion_Model_for_Real_World_Video/run_03",
+        "_robustness/2578_DOVE_Efficient_One_Step_Diffusion_Model_for_Real_World_Video/run_04",
+        "_robustness/2578_DOVE_Efficient_One_Step_Diffusion_Model_for_Real_World_Video/run_05",
+        "_robustness/2578_DOVE_Efficient_One_Step_Diffusion_Model_for_Real_World_Video/run_06",
+        "_robustness/2578_DOVE_Efficient_One_Step_Diffusion_Model_for_Real_World_Video/run_07",
+        "_robustness/2578_DOVE_Efficient_One_Step_Diffusion_Model_for_Real_World_Video/run_08",
+        "_robustness/2578_DOVE_Efficient_One_Step_Diffusion_Model_for_Real_World_Video/run_09",
+        "_robustness/2578_DOVE_Efficient_One_Step_Diffusion_Model_for_Real_World_Video/run_10"
+      ]
+    },
+    {
+      "paper": "2371_Forging_Time_Series_with_Language_A_Large_Language_Model_App",
+      "runs": [
+        "_robustness/2371_Forging_Time_Series_with_Language_A_Large_Language_Model_App/run_01",
+        "_robustness/2371_Forging_Time_Series_with_Language_A_Large_Language_Model_App/run_02",
+        "_robustness/2371_Forging_Time_Series_with_Language_A_Large_Language_Model_App/run_03",
+        "_robustness/2371_Forging_Time_Series_with_Language_A_Large_Language_Model_App/run_04",
+        "_robustness/2371_Forging_Time_Series_with_Language_A_Large_Language_Model_App/run_05",
+        "_robustness/2371_Forging_Time_Series_with_Language_A_Large_Language_Model_App/run_06",
+        "_robustness/2371_Forging_Time_Series_with_Language_A_Large_Language_Model_App/run_07",
+        "_robustness/2371_Forging_Time_Series_with_Language_A_Large_Language_Model_App/run_08",
+        "_robustness/2371_Forging_Time_Series_with_Language_A_Large_Language_Model_App/run_09",
+        "_robustness/2371_Forging_Time_Series_with_Language_A_Large_Language_Model_App/run_10"
+      ]
+    }
+  ]
+}

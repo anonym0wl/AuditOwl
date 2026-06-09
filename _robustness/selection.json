@@ -1,0 +1,72 @@
+{
+  "seed": 42,
+  "k": 5,
+  "min_src_files": 5,
+  "frame_size": 78,
+  "selected": [
+    {
+      "paper": "1829_OLinear_A_Linear_Model_for_Time_Series_Forecasting_in_Orthog",
+      "src_files": 169,
+      "code_kb": 30199,
+      "has_verified": true,
+      "n_findings": 5,
+      "n_high": 0,
+      "categories": {
+        "missing": 3,
+        "bug": 1,
+        "difference": 1
+      }
+    },
+    {
+      "paper": "1333_Latent_Harmony_Synergistic_Unified_UHD_Image_Restoration_via",
+      "src_files": 49,
+      "code_kb": 543,
+      "has_verified": true,
+      "n_findings": 9,
+      "n_high": 4,
+      "categories": {
+        "missing": 4,
+        "bug": 3,
+        "difference": 2
+      }
+    },
+    {
+      "paper": "2657_Scalable_Explainable_and_Provably_Robust_Anomaly_Detection_w",
+      "src_files": 28,
+      "code_kb": 171906,
+      "has_verified": true,
+      "n_findings": 5,
+      "n_high": 1,
+      "categories": {
+        "missing": 2,
+        "bug": 1,
+        "difference": 1,
+        "methodology": 1
+      }
+    },
+    {
+      "paper": "2578_DOVE_Efficient_One_Step_Diffusion_Model_for_Real_World_Video",
+      "src_files": 56,
+      "code_kb": 189464,
+      "has_verified": true,
+      "n_findings": 5,
+      "n_high": 0,
+      "categories": {
+        "missing": 2,
+        "bug": 3
+      }
+    },
+    {
+      "paper": "2371_Forging_Time_Series_with_Language_A_Large_Language_Model_App",
+      "src_files": 303,
+      "code_kb": 69617,
+      "has_verified": true,
+      "n_findings": 7,
+      "n_high": 3,
+      "categories": {
+        "missing": 6,
+        "methodology": 1
+      }
+    }
+  ]
+}
