@@ -1,0 +1,19 @@
+{
+  "folder": "4838_Visual_Jenga_Discovering_Object_Dependencies_via_Counterfact",
+  "model": "claude-opus-4-8",
+  "audit_runs": 1,
+  "tokens": {
+    "input": 7269,
+    "output": 10373,
+    "cache_write": 252158,
+    "cache_read": 1342585
+  },
+  "total_tokens": 1612385,
+  "pricing_usd_per_mtok": {
+    "input": 15.0,
+    "output": 75.0,
+    "cache_write": 18.75,
+    "cache_read": 1.5
+  },
+  "estimated_cost_usd": 7.63
+}

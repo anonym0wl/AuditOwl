@@ -1,0 +1,19 @@
+{
+  "folder": "4730_MTRec_Learning_to_Align_with_User_Preferences_via_Mental_Rew",
+  "model": "claude-opus-4-8",
+  "audit_runs": 1,
+  "tokens": {
+    "input": 7873,
+    "output": 9834,
+    "cache_write": 184974,
+    "cache_read": 1352936
+  },
+  "total_tokens": 1555617,
+  "pricing_usd_per_mtok": {
+    "input": 15.0,
+    "output": 75.0,
+    "cache_write": 18.75,
+    "cache_read": 1.5
+  },
+  "estimated_cost_usd": 6.35
+}
