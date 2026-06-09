@@ -1,0 +1,10 @@
+check,present_or_found
+README.md present,False
+Imagenette/cosine-sim code (Fig 1),True
+two-moons histogram code (Fig 1a),True
+nearest-neighbor distance experiment driver (Fig 2 right),True
+hybrid-model tau-switch driver (Fig 3),True
+LPIPS dependency/usage (Fig 3 metric),True
+CelebA training script in repo,True
+MNIST/FMNIST experiment code (App. C),True
+live ipdb.set_trace() (uncommented),True

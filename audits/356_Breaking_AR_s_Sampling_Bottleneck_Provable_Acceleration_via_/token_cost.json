@@ -1,0 +1,19 @@
+{
+  "folder": "356_Breaking_AR_s_Sampling_Bottleneck_Provable_Acceleration_via_",
+  "model": "claude-opus-4-8",
+  "audit_runs": 1,
+  "tokens": {
+    "input": 7261,
+    "output": 8311,
+    "cache_write": 152693,
+    "cache_read": 1034962
+  },
+  "total_tokens": 1203227,
+  "pricing_usd_per_mtok": {
+    "input": 15.0,
+    "output": 75.0,
+    "cache_write": 18.75,
+    "cache_read": 1.5
+  },
+  "estimated_cost_usd": 5.15
+}
