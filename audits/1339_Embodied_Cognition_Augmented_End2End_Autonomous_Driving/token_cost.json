@@ -1,0 +1,19 @@
+{
+  "folder": "1339_Embodied_Cognition_Augmented_End2End_Autonomous_Driving",
+  "model": "claude-opus-4-8",
+  "audit_runs": 1,
+  "tokens": {
+    "input": 31006,
+    "output": 10135,
+    "cache_write": 166894,
+    "cache_read": 738910
+  },
+  "total_tokens": 946945,
+  "pricing_usd_per_mtok": {
+    "input": 15.0,
+    "output": 75.0,
+    "cache_write": 18.75,
+    "cache_read": 1.5
+  },
+  "estimated_cost_usd": 5.46
+}
