@@ -1,0 +1,2 @@
+metric,gen_available,gen_used,gen_ignored,ed_default,ed_perm_mean,ed_perm_min,ed_perm_max,ed_perm_std
+ED,100,30,70,22.2859,22.3625,22.1491,22.6331,0.1154

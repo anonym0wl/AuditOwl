@@ -1,0 +1,18 @@
+=== Baseline implementation references in *.py ===
+  timevae: 0 match(es)
+  timevqvae: 0 match(es)
+  rtsgan: 0 match(es)
+  sdegan: 0 match(es)
+  \bls4\b: 0 match(es)
+  cosci: 0 match(es)
+
+=== Multi-dataset driver ===
+  loop-over-datasets patterns found: 0 -> []
+
+=== Figure-2 kNN classifier (acc 0.81) ===
+  kNN/accuracy code in notebooks: False
+  scikit-fda referenced anywhere in py: False
+
+=== TTM metric channel loop ===
+  loops over ALL pred_val channels: True
+  avg_rmse = np.mean(rmse_list) over all channels: True

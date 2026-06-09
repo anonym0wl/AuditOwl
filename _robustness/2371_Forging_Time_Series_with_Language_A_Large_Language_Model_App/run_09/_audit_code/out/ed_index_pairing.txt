@@ -1,0 +1,5 @@
+ED with generated rows in original order : 22.2859
+ED with generated rows permutation #1    : 22.3694
+ED with generated rows permutation #2    : 22.4959
+
+If ED were a set-vs-set similarity it would be invariant to re-ordering the generated rows. It is NOT: the three values above differ, proving ED (and DTW, same loop) compare original[i] vs generated[i] by arbitrary index rather than by any matching.

@@ -1,0 +1,18 @@
+{
+  "MDD (calculate_mdd)": "PRESENT",
+  "ACD (calculate_acd)": "PRESENT",
+  "SD (calculate_sd)": "PRESENT",
+  "KD (calculate_kd)": "PRESENT",
+  "ED (calculate_ed)": "PRESENT",
+  "DTW (calculate_dtw)": "PRESENT",
+  "SHR (calculate_shapelet_recons_err)": "PRESENT",
+  "RMSE (compute_rmse)": "PRESENT",
+  "MASE (compute_mase)": "PRESENT",
+  "WQL (compute_wql)": "PRESENT",
+  "Baseline generator TimeVAE": "MISSING",
+  "Baseline generator TimeVQVAE": "MISSING",
+  "Baseline generator RTSGAN": "MISSING",
+  "Baseline generator SDEGAN": "MISSING",
+  "Baseline generator LS4": "MISSING",
+  "Section-6 kNN classifier / accuracy": "MISSING"
+}

@@ -1,0 +1,9 @@
+WQL (3 quantiles, identical point prediction) = 0.560421
+0.5 * MAE                                     = 0.560421
+ratio WQL / MAE                               = 0.500000
+
+TTM emits a single point forecast, and compute_wql passes that same point
+prediction for q=0.1, 0.5, 0.9. The pinball loss with one prediction is
+0.5*|e| averaged over the symmetric quantile set, so the Table-2 'WQL'
+column is exactly 0.5*MAE, not a Weighted Quantile Loss (which requires
+distinct quantile/probabilistic forecasts).

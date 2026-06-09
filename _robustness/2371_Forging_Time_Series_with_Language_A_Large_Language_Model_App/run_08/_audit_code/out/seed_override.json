@@ -1,0 +1,7 @@
+{
+  "sdforger_constructor_call": "SDForger(model_path=llm, text_template=text_template, float_type=sdforger_float_type)",
+  "constructor_passes_seed": false,
+  "default_seed_fallback_line": "self.seed = kwargs['seed'] if 'seed' in kwargs else 42",
+  "init_calls_set_seed": true,
+  "verdict": "config 'seed' is NOT propagated to SDForger; LLM RNG is hardcoded to default 42"
+}

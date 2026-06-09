@@ -1,0 +1,12 @@
+[ED] pairs ori_data[i] with gen_data[i] by index: True
+[DTW] pairs ori_data[i] with comp_data[i] by index: True
+[ED/DTW] any matching/sorting before pairing: False
+[preprocess] uses StandardScaler (z-score): True
+[preprocess] uses MinMax/[0,1] scaling: False
+[SHAP-RE] reshape to (n,length) collapsing channel axis: True
+[SHAP-RE] sets a local seed inside calculate_shapelet_recons_err: False
+[SHAP-RE] random dictionary/label init each call: True
+[MASE] denominator = mean|true[1:]-true[:-1]| over forecast horizon: True
+[WQL] same point 'pred' reused for all quantiles; divided by n_quantiles: True
+[WQL] normalised by sum|true| (standard WQL): False
+[baselines] py files referencing TimeVAE/TimeVQVAE/RTSGAN/SDEGAN/LS4: 0

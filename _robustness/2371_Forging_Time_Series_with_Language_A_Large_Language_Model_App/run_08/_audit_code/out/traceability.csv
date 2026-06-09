@@ -1,0 +1,17 @@
+row,artefact,status
+0,MDD (calculate_mdd),PRESENT
+1,ACD (calculate_acd),PRESENT
+2,SD (calculate_sd),PRESENT
+3,KD (calculate_kd),PRESENT
+4,ED (calculate_ed),PRESENT
+5,DTW (calculate_dtw),PRESENT
+6,SHR (calculate_shapelet_recons_err),PRESENT
+7,RMSE (compute_rmse),PRESENT
+8,MASE (compute_mase),PRESENT
+9,WQL (compute_wql),PRESENT
+10,Baseline generator TimeVAE,MISSING
+11,Baseline generator TimeVQVAE,MISSING
+12,Baseline generator RTSGAN,MISSING
+13,Baseline generator SDEGAN,MISSING
+14,Baseline generator LS4,MISSING
+15,Section-6 kNN classifier / accuracy,MISSING
