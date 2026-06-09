@@ -1,0 +1,30 @@
+{
+  "csm_token_hits": {},
+  "csm_code_found": false,
+  "num_hardcoded_epoch_branches": 47,
+  "epoch_values_min": 1,
+  "epoch_values_max": 5000,
+  "distinct_epoch_values": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    10,
+    20,
+    25,
+    30,
+    50,
+    75,
+    100,
+    110,
+    130,
+    200,
+    500,
+    580,
+    1000,
+    1800,
+    2000,
+    5000
+  ]
+}

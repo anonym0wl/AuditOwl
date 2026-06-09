@@ -1,0 +1,27 @@
+{
+  "FullExperiments.py": {
+    "queue_put_exprs": [
+      "result",
+      "(\"ModERROR\", str(e))"
+    ],
+    "queue_put_literal_tuple_arities": [
+      1,
+      2
+    ],
+    "queue_get_unpack_arity": 4,
+    "mismatch_present": true
+  },
+  "ContaminationStudies.py": {
+    "queue_put_exprs": [
+      "result",
+      "(\"ModERROR\", str(e))"
+    ],
+    "queue_put_literal_tuple_arities": [
+      1,
+      2
+    ],
+    "queue_get_unpack_arity": 4,
+    "mismatch_present": true
+  },
+  "_demo_unpack_2tuple_into_4": "ValueError on unpack: not enough values to unpack (expected 4, got 2)"
+}

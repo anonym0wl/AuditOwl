@@ -1,0 +1,19 @@
+datasets/small: 12 npz files
+datasets/medium: 15 npz files
+datasets/high_dim: 9 npz files
+datasets/large: 11 npz files
+datasets/contamination: 8 npz files
+TOTAL unique main-split datasets: 47 (paper claims 47)
+datasets appearing in >1 split (duplicates): []
+Full_experiments.py exists: False
+FullExperiments.py exists: True
+
+# .py files scanned: 23
+pattern [friedman]: hits in NONE
+pattern [nemenyi]: hits in NONE
+pattern [critical_difference/CD]: hits in NONE
+pattern [CSM/contrast score margin]: hits in NONE
+pattern [epoch selection]: hits in NONE
+pattern [Jaccard (explanation)]: hits in NONE
+pattern [ExactMatch (explanation)]: hits in NONE
+pattern [explanation/feature contribution]: hits in NONE

@@ -1,0 +1,13 @@
+{
+  "csm_epoch_selection_hits": [],
+  "statistical_test_hits": [],
+  "explanation_hits": [
+    "FMAD/functions.py:87: elif \"mnist\" in dataset_name:"
+  ],
+  "run_knn_calls_Full_experiments": true,
+  "FullExperiments_exists": true,
+  "Full_experiments_exists": false,
+  "tccm_epoch_branches": 47,
+  "tccm_epoch_min": 1,
+  "tccm_epoch_max": 5000
+}
