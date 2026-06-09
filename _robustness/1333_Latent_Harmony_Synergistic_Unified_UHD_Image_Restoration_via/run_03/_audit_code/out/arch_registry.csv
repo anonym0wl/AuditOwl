@@ -1,0 +1,12 @@
+requested_type,in_configs,is_registered_arch
+Adam,stage1_eqvae.yml;stage2_hflora.yml,False
+CosineAnnealingRestartLR,stage1_eqvae.yml;stage2_hflora.yml,False
+GANLoss,stage2_hflora.yml,False
+KlLoss,stage1_eqvae.yml,False
+L1Loss,stage1_eqvae.yml;stage2_hflora.yml,False
+PairedImageDataset,stage1_eqvae.yml;stage2_hflora.yml,False
+RAVAE,stage2_hflora.yml,False
+RAVAEHFLora,stage2_hflora.yml,True
+RAVAE_EQ,stage1_eqvae.yml,True
+UNetDiscriminatorSN,stage2_hflora.yml,True
+disk,stage1_eqvae.yml;stage2_hflora.yml,False

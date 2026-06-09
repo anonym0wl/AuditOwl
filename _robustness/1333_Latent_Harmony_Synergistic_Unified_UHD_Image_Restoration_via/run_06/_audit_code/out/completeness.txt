@@ -1,0 +1,28 @@
+Runnable entrypoints (__main__):
+  basicsr/archs/LHVAE_arch.py              -> debug/util
+  basicsr/archs/Resblock/Res_four.py       -> debug/util
+  basicsr/train.py                         -> train
+  basicsr/utils/diffjpeg.py                -> debug/util
+
+basicsr/test.py exists? -> False
+
+Dependency spec files present: NONE
+
+README.md byte length: 16  content='# Latent-Harmony'
+
+Checkpoint/weight files present: NONE
+Image/data files present: NONE
+
+Configs reference these external artefacts (must be supplied by user):
+  [stage1_eqvae.yml] dataroot_gt: ./datasets/train/gt
+  [stage1_eqvae.yml] dataroot_lq: ./datasets/train/lq
+  [stage1_eqvae.yml] dataroot_gt: ./datasets/val/gt
+  [stage1_eqvae.yml] dataroot_lq: ./datasets/val/lq
+  [stage1_eqvae.yml] local_weight_path: ./weights/dinov2_vits14.pth
+  [stage1_eqvae.yml] restart_weights: [1]
+  [stage2_hflora.yml] dataroot_gt: ./datasets/train/gt
+  [stage2_hflora.yml] dataroot_lq: ./datasets/train/lq
+  [stage2_hflora.yml] dataroot_gt: ./datasets/val/gt
+  [stage2_hflora.yml] dataroot_lq: ./datasets/val/lq
+  [stage2_hflora.yml] pretrain_vae_path: ./weights/stage1_eqvae.pth
+  [stage2_hflora.yml] restart_weights: [1]

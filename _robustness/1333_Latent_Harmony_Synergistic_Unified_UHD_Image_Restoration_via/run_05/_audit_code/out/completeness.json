@@ -1,0 +1,16 @@
+{
+  "total_files": 54,
+  "py_files": 49,
+  "dependency_specs": [],
+  "eval_test_infer_scripts": [],
+  "download_dataprep_scripts": [
+    "basicsr/data/prefetch_dataloader.py"
+  ],
+  "shell_scripts": [],
+  "model_weight_files (excl niqe)": [],
+  "readme_nonblank_lines": [
+    "# Latent-Harmony"
+  ],
+  "datasets_dir_exists": false,
+  "weights_dir_exists": false
+}

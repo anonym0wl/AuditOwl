@@ -1,0 +1,353 @@
+{
+  "results": [
+    {
+      "config": "stage1_eqvae.yml",
+      "type": "PairedImageDataset",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": true,
+      "resolves": true
+    },
+    {
+      "config": "stage1_eqvae.yml",
+      "type": "disk",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    },
+    {
+      "config": "stage1_eqvae.yml",
+      "type": "PairedImageDataset",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": true,
+      "resolves": true
+    },
+    {
+      "config": "stage1_eqvae.yml",
+      "type": "disk",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    },
+    {
+      "config": "stage1_eqvae.yml",
+      "type": "RAVAE_EQ",
+      "in_arch": true,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": true
+    },
+    {
+      "config": "stage1_eqvae.yml",
+      "type": "L1Loss",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": true,
+      "in_dataset": false,
+      "resolves": true
+    },
+    {
+      "config": "stage1_eqvae.yml",
+      "type": "KlLoss",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": true,
+      "in_dataset": false,
+      "resolves": true
+    },
+    {
+      "config": "stage1_eqvae.yml",
+      "type": "Adam",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    },
+    {
+      "config": "stage1_eqvae.yml",
+      "type": "CosineAnnealingRestartLR",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    },
+    {
+      "config": "stage2_hflora.yml",
+      "type": "PairedImageDataset",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": true,
+      "resolves": true
+    },
+    {
+      "config": "stage2_hflora.yml",
+      "type": "disk",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    },
+    {
+      "config": "stage2_hflora.yml",
+      "type": "PairedImageDataset",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": true,
+      "resolves": true
+    },
+    {
+      "config": "stage2_hflora.yml",
+      "type": "disk",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    },
+    {
+      "config": "stage2_hflora.yml",
+      "type": "RAVAEHFLora",
+      "in_arch": true,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": true
+    },
+    {
+      "config": "stage2_hflora.yml",
+      "type": "RAVAE",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    },
+    {
+      "config": "stage2_hflora.yml",
+      "type": "UNetDiscriminatorSN",
+      "in_arch": true,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": true
+    },
+    {
+      "config": "stage2_hflora.yml",
+      "type": "L1Loss",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": true,
+      "in_dataset": false,
+      "resolves": true
+    },
+    {
+      "config": "stage2_hflora.yml",
+      "type": "GANLoss",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": true,
+      "in_dataset": false,
+      "resolves": true
+    },
+    {
+      "config": "stage2_hflora.yml",
+      "type": "Adam",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    },
+    {
+      "config": "stage2_hflora.yml",
+      "type": "Adam",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    },
+    {
+      "config": "stage2_hflora.yml",
+      "type": "Adam",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    },
+    {
+      "config": "stage2_hflora.yml",
+      "type": "Adam",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    },
+    {
+      "config": "stage2_hflora.yml",
+      "type": "CosineAnnealingRestartLR",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    }
+  ],
+  "unresolved": [
+    {
+      "config": "stage1_eqvae.yml",
+      "type": "disk",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    },
+    {
+      "config": "stage1_eqvae.yml",
+      "type": "disk",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    },
+    {
+      "config": "stage1_eqvae.yml",
+      "type": "Adam",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    },
+    {
+      "config": "stage1_eqvae.yml",
+      "type": "CosineAnnealingRestartLR",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    },
+    {
+      "config": "stage2_hflora.yml",
+      "type": "disk",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    },
+    {
+      "config": "stage2_hflora.yml",
+      "type": "disk",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    },
+    {
+      "config": "stage2_hflora.yml",
+      "type": "RAVAE",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    },
+    {
+      "config": "stage2_hflora.yml",
+      "type": "Adam",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    },
+    {
+      "config": "stage2_hflora.yml",
+      "type": "Adam",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    },
+    {
+      "config": "stage2_hflora.yml",
+      "type": "Adam",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    },
+    {
+      "config": "stage2_hflora.yml",
+      "type": "Adam",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    },
+    {
+      "config": "stage2_hflora.yml",
+      "type": "CosineAnnealingRestartLR",
+      "in_arch": false,
+      "in_model": false,
+      "in_loss": false,
+      "in_dataset": false,
+      "resolves": false
+    }
+  ],
+  "registered": {
+    "arch": [
+      "LoRAConv2d",
+      "RAVAEHFLora",
+      "RAVAE_EQ",
+      "UNetDiscriminatorSN"
+    ],
+    "model": [
+      "EQVAEModel",
+      "SRModel",
+      "VAEadapter"
+    ],
+    "loss": [
+      "CharbonnierLoss",
+      "EQLoss",
+      "EncoderLoss",
+      "FFTLoss",
+      "GANFeatLoss",
+      "GANLoss",
+      "KlLoss",
+      "L1Loss",
+      "LPIPSLoss",
+      "MSELoss",
+      "MultiScaleGANLoss",
+      "PerceptualLoss",
+      "WeightedTVLoss"
+    ],
+    "dataset": [
+      "PairedImageDataset"
+    ],
+    "metric": []
+  }
+}

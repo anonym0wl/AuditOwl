@@ -1,0 +1,7 @@
+registered_arch_classes=['LoRAConv2d', 'RAVAEHFLora', 'RAVAE_EQ', 'UNetDiscriminatorSN']
+stage2_config_type_refs=['VAEadapter', 'PairedImageDataset', 'disk', 'PairedImageDataset', 'disk', 'RAVAEHFLora', 'RAVAE', 'vanilla', 'vanilla', 'pad', 'UNetDiscriminatorSN', 'L1Loss', 'GANLoss', 'hinge', 'Adam', 'Adam', 'Adam', 'Adam', 'CosineAnnealingRestartLR']
+RAVAE_referenced_in_stage2=True; RAVAE_registered=False
+VERDICT_registry_mismatch=True
+restoration_net_token_hits={}
+VERDICT_no_standalone_restoration_net=True
+RAVAEHFLora_forward_calls_vae_only=True

@@ -1,0 +1,11 @@
+Auto-imported *_arch.py files contribute these registered arch names:
+  RAVAE_EQ              (LHVAE_arch.py)
+  RAVAEHFLora           (LHVAE_hflora_arch.py)
+  UNetDiscriminatorSN   (discriminator_arch.py)
+  LoRAConv2d            (lora_arch.py)
+
+config stage2_hflora.yml requests vae_config.type = "RAVAE"
+Is "RAVAE" registered?  -> False
+Is "RAVAE_EQ" registered? -> True
+
+VERDICT: BUG (RAVAE not registered -> ARCH_REGISTRY.get("RAVAE") raises KeyError)

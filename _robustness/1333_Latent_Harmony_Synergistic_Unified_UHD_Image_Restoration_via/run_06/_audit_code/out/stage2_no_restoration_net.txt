@@ -1,0 +1,18 @@
+=== VAEadapter_model.py ===
+  (no restoration-network / L_Res tokens found)
+
+=== LHVAE_hflora_arch.py ===
+  (no restoration-network / L_Res tokens found)
+
+=== stage2_hflora.yml ===
+  (no restoration-network / L_Res tokens found)
+
+Stage-2 _forward_g call site:
+  L133: out = self.net_g(self.lq, alpha=self.alpha)
+
+Stage-2 network (RAVAEHFLora.forward) just wraps the VAE:
+  L38: self.vae = ARCH_REGISTRY.get(arch_type)(**cfg)
+  L126: out = self.vae(x)
+
+VERDICT: Stage-2 has no R_theta and no L_Res; net_g is the VAE itself, optimized only
+by HF fidelity + GAN losses. The paper's "train R_theta with frozen VAE (Eq.7)" step is absent.

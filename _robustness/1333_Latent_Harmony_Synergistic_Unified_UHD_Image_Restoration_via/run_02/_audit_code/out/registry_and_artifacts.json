@@ -1,0 +1,61 @@
+{
+  "registered_archs": [
+    [
+      "RAVAEHFLora",
+      "basicsr/archs/LHVAE_hflora_arch.py"
+    ],
+    [
+      "UNetDiscriminatorSN",
+      "basicsr/archs/discriminator_arch.py"
+    ],
+    [
+      "RAVAE_EQ",
+      "basicsr/archs/LHVAE_arch.py"
+    ],
+    [
+      "LoRAConv2d",
+      "basicsr/archs/lora_arch.py"
+    ]
+  ],
+  "config_types": {
+    "stage1_eqvae.yml": [
+      "PairedImageDataset",
+      "disk",
+      "PairedImageDataset",
+      "disk",
+      "RAVAE_EQ",
+      "L1Loss",
+      "KlLoss",
+      "Adam",
+      "CosineAnnealingRestartLR"
+    ],
+    "stage2_hflora.yml": [
+      "PairedImageDataset",
+      "disk",
+      "PairedImageDataset",
+      "disk",
+      "RAVAEHFLora",
+      "RAVAE",
+      "UNetDiscriminatorSN",
+      "L1Loss",
+      "GANLoss",
+      "Adam",
+      "Adam",
+      "Adam",
+      "Adam",
+      "CosineAnnealingRestartLR"
+    ]
+  },
+  "RAVAE_referenced_in_stage2_config": true,
+  "RAVAE_registered": false,
+  "restoration_net_registered": false,
+  "artefact_exists": {
+    "./weights/stage1_eqvae.pth": false,
+    "./weights/dinov2_vits14.pth": false,
+    "./datasets/train/gt": false,
+    "./datasets/train/lq": false,
+    "requirements.txt": false,
+    "setup.py": false,
+    "environment.yml": false
+  }
+}

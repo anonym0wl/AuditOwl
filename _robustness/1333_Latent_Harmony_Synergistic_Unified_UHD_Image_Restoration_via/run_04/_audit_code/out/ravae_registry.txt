@@ -1,0 +1,10 @@
+Registered arch classes (from *_arch.py): ['LoRAConv2d', 'RAVAEHFLora', 'RAVAE_EQ', 'UNetDiscriminatorSN']
+
+Config 'type:' values:
+  stage2_hflora.yml: ['VAEadapter', 'PairedImageDataset', 'disk', 'PairedImageDataset', 'disk', 'RAVAEHFLora', 'RAVAE', 'vanilla', 'vanilla', 'pad', 'UNetDiscriminatorSN', 'L1Loss', 'GANLoss', 'hinge', 'Adam', 'Adam', 'Adam', 'Adam', 'CosineAnnealingRestartLR']
+  stage1_eqvae.yml: ['EQVAEModel', 'PairedImageDataset', 'disk', 'PairedImageDataset', 'disk', 'RAVAE_EQ', 'vanilla', 'vanilla', 'pad', 'L1Loss', 'KlLoss', 'Adam', 'CosineAnnealingRestartLR']
+
+'RAVAE' registered?    False
+'RAVAE_EQ' registered? True
+stage2_hflora.yml requests types: ['VAEadapter', 'PairedImageDataset', 'disk', 'PairedImageDataset', 'disk', 'RAVAEHFLora', 'RAVAE', 'vanilla', 'vanilla', 'pad', 'UNetDiscriminatorSN', 'L1Loss', 'GANLoss', 'hinge', 'Adam', 'Adam', 'Adam', 'Adam', 'CosineAnnealingRestartLR']
+VERDICT: BUG (stage2 requests RAVAE but it is not registered)
