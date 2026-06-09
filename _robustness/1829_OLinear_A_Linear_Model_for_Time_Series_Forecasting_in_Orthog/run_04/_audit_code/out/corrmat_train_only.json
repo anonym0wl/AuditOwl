@@ -1,0 +1,29 @@
+[
+  {
+    "n": 10000,
+    "train_length": 7000,
+    "corr_start": 0,
+    "corr_end": 7000,
+    "dataset_num_train": 7000,
+    "uses_only_train": true,
+    "leak_into_val_test": false
+  },
+  {
+    "n": 52696,
+    "train_length": 36887,
+    "corr_start": 0,
+    "corr_end": 36887,
+    "dataset_num_train": 36887,
+    "uses_only_train": true,
+    "leak_into_val_test": false
+  },
+  {
+    "n": 17544,
+    "train_length": 12280,
+    "corr_start": 0,
+    "corr_end": 12280,
+    "dataset_num_train": 12280,
+    "uses_only_train": true,
+    "leak_into_val_test": false
+  }
+]

@@ -1,0 +1,111 @@
+{
+  "n_py_files": 45,
+  "statistical_test_hits": [
+    [
+      "run.py",
+      576,
+      "print(f'\\tbest_test_batch_size: {best_batch_size}, best_mse: {mse:.5f}, best_mae: {mae:.5f}')"
+    ],
+    [
+      "layers/Leddam.py",
+      316,
+      "pe = pe / (pe.std() * 10)"
+    ],
+    [
+      "layers/Leddam.py",
+      336,
+      "cpe = cpe / (cpe.std() * 10)"
+    ],
+    [
+      "layers/Leddam.py",
+      345,
+      "cpe = cpe / (cpe.std() * 10)"
+    ],
+    [
+      "layers/Leddam_enhanced.py",
+      453,
+      "pe = pe / (pe.std() * 10)"
+    ],
+    [
+      "layers/Leddam_enhanced.py",
+      473,
+      "cpe = cpe / (cpe.std() * 10)"
+    ],
+    [
+      "layers/Leddam_enhanced.py",
+      482,
+      "cpe = cpe / (cpe.std() * 10)"
+    ],
+    [
+      "experiments/exp_forecast.py",
+      118,
+      "with open('model_stats.txt', 'a') as f:"
+    ],
+    [
+      "experiments/exp_forecast.py",
+      133,
+      "best_log_dataset_txt = os.path.join(best_log_dataset_path, args.model_id_ori + '_stats.txt')"
+    ],
+    [
+      "data_provider/dataset_physio.py",
+      117,
+      "std[k] = c_data.std()"
+    ],
+    [
+      "data_provider/dataset_pm25.py",
+      83,
+      "# interval size is eval_length (missing values are imputed only once)"
+    ]
+  ],
+  "n_statistical_test_hits": 11,
+  "distinct_hardcoded_seed_values_in_run_py": [
+    "2023"
+  ],
+  "seed_setting_lines": [
+    [
+      "run.py",
+      278,
+      "parser.add_argument('--fix_seed', type=int, default=1, help='fix_seed')"
+    ],
+    [
+      "run.py",
+      279,
+      "parser.add_argument('--grad_clip', type=int, default=0, help='fix_seed')"
+    ],
+    [
+      "run.py",
+      414,
+      "if (args.itr > 1 and args.fix_seed) or (args.itr == 1 and args.fix_seed == 0):"
+    ],
+    [
+      "run.py",
+      415,
+      "confirm_again = input('Please check args.itr and args.fix_seed. They seem irrational. Continue? (yes/no):')"
+    ],
+    [
+      "run.py",
+      467,
+      "if args.fix_seed:"
+    ],
+    [
+      "run.py",
+      468,
+      "fix_seed = 2023  # 2023  # if args.task_name == 'forecasting' else 2021"
+    ],
+    [
+      "run.py",
+      469,
+      "random.seed(fix_seed)"
+    ],
+    [
+      "run.py",
+      470,
+      "torch.manual_seed(fix_seed)"
+    ],
+    [
+      "run.py",
+      471,
+      "np.random.seed(fix_seed)"
+    ]
+  ]
+}

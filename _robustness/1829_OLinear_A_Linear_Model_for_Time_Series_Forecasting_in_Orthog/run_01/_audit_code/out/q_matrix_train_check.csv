@@ -1,0 +1,11 @@
+committed_shape,(96, 96)
+train_recompute_shape,(96, 96)
+full_recompute_shape,(96, 96)
+n_total_rows,52696
+train_length,36887
+max_abs_diff_vs_train,0.000000
+max_abs_diff_signrobust_vs_train,0.000000
+max_abs_diff_vs_full,0.474731
+max_abs_diff_signrobust_vs_full,0.248160
+matches_train_only,True
+matches_full_series,False

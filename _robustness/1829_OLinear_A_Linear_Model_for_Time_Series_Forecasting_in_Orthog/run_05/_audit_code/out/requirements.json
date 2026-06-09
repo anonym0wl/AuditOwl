@@ -1,0 +1,21 @@
+{
+  "requirements_lines": [
+    "pandas",
+    "scikit-learn",
+    "numpy",
+    "matplotlib",
+    "torch",
+    "fvcore",
+    "einops",
+    "thop",
+    "timm",
+    "reformer_pytorch",
+    "openpyxl",
+    "seaborn",
+    "pywt"
+  ],
+  "n_total": 13,
+  "n_pinned": 0,
+  "pinned_lines": [],
+  "python_version_specified": false
+}

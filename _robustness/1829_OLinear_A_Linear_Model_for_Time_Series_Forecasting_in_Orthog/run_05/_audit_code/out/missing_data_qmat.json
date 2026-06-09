@@ -1,0 +1,152 @@
+{
+  "scripts": [
+    {
+      "script": "Covid_orthoLinear.sh",
+      "root_path": "./dataset/covid/",
+      "data_path": "covid.csv",
+      "data_file_present": true
+    },
+    {
+      "script": "Covid_orthoLinear_S2.sh",
+      "root_path": "./dataset/covid/",
+      "data_path": "covid.csv",
+      "data_file_present": true
+    },
+    {
+      "script": "ECL_orthoLinear.sh",
+      "root_path": "./dataset/electricity/",
+      "data_path": "electricity.csv",
+      "data_file_present": false
+    },
+    {
+      "script": "ETTh1_orthoLinear.sh",
+      "root_path": "./dataset/ETT-small/",
+      "data_path": "ETTh1.csv",
+      "data_file_present": false
+    },
+    {
+      "script": "ETTh2_orthoLinear.sh",
+      "root_path": "./dataset/ETT-small/",
+      "data_path": "ETTh2.csv",
+      "data_file_present": false
+    },
+    {
+      "script": "ETTm1_orthoLinear.sh",
+      "root_path": "./dataset/ETT-small/",
+      "data_path": "ETTm1.csv",
+      "data_file_present": false
+    },
+    {
+      "script": "ETTm2_orthoLinear.sh",
+      "root_path": "./dataset/ETT-small/",
+      "data_path": "ETTm2.csv",
+      "data_file_present": false
+    },
+    {
+      "script": "Exchange_orthoLinear.sh",
+      "root_path": "./dataset/exchange_rate/",
+      "data_path": "exchange_rate.csv",
+      "data_file_present": false
+    },
+    {
+      "script": "ILI_orthoLinear.sh",
+      "root_path": "./dataset/ILI/",
+      "data_path": "national_illness.csv",
+      "data_file_present": true
+    },
+    {
+      "script": "ILI_orthoLinear_S2.sh",
+      "root_path": "./dataset/ILI/",
+      "data_path": "national_illness.csv",
+      "data_file_present": true
+    },
+    {
+      "script": "METR_orthoLinear.sh",
+      "root_path": "./dataset/METR_LA/",
+      "data_path": "METR_LA.csv",
+      "data_file_present": false
+    },
+    {
+      "script": "METR_orthoLinear_S2.sh",
+      "root_path": "./dataset/METR_LA/",
+      "data_path": "METR_LA.csv",
+      "data_file_present": false
+    },
+    {
+      "script": "Nasdaq_orthoLinear.sh",
+      "root_path": "./dataset/nasdaq/",
+      "data_path": "nasdaq.csv",
+      "data_file_present": true
+    },
+    {
+      "script": "Nasdaq_orthoLinear_S2.sh",
+      "root_path": "./dataset/nasdaq/",
+      "data_path": "nasdaq.csv",
+      "data_file_present": true
+    },
+    {
+      "script": "PEMS03_orthoLinear.sh",
+      "root_path": "./dataset/PEMS/",
+      "data_path": "PEMS03.npz",
+      "data_file_present": false
+    },
+    {
+      "script": "PEMS04_orthoLinear.sh",
+      "root_path": "./dataset/PEMS/",
+      "data_path": "PEMS04.npz",
+      "data_file_present": false
+    },
+    {
+      "script": "PEMS07_orthoLinear.sh",
+      "root_path": "./dataset/PEMS/",
+      "data_path": "PEMS07.npz",
+      "data_file_present": false
+    },
+    {
+      "script": "PEMS08_orthoLinear.sh",
+      "root_path": "./dataset/PEMS/",
+      "data_path": "PEMS08.npz",
+      "data_file_present": false
+    },
+    {
+      "script": "Solar_orthoLinear.sh",
+      "root_path": "./dataset/Solar/",
+      "data_path": "solar_AL.txt",
+      "data_file_present": false
+    },
+    {
+      "script": "Traffic_orthoLinear.sh",
+      "root_path": "./dataset/traffic/",
+      "data_path": "traffic.csv",
+      "data_file_present": false
+    },
+    {
+      "script": "Weather_orthoLinear.sh",
+      "root_path": "./dataset/weather/",
+      "data_path": "weather.csv",
+      "data_file_present": true
+    },
+    {
+      "script": "Wiki_orthoLinear.sh",
+      "root_path": "./dataset/wiki/",
+      "data_path": "wiki_mini.csv",
+      "data_file_present": true
+    },
+    {
+      "script": "Wiki_orthoLinear_S2.sh",
+      "root_path": "./dataset/wiki/",
+      "data_path": "wiki_mini.csv",
+      "data_file_present": true
+    }
+  ],
+  "probe_files_present": {
+    "dataset/electricity/electricity_96_ratio0.7.npy": false,
+    "dataset/electricity/electricity.csv": false,
+    "dataset/traffic/traffic.csv": false,
+    "dataset/ETT-small/ETTh1.csv": false,
+    "dataset/Solar/solar_AL.txt": false,
+    "dataset/PEMS/PEMS03.npz": false,
+    "dataset/exchange_rate/exchange_rate.csv": false,
+    "dataset/METR_LA/METR_LA.csv": false
+  }
+}

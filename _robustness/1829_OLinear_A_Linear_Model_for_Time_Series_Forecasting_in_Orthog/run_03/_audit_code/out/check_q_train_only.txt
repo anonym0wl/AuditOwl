@@ -1,0 +1,4 @@
+[orthonormal] cars_12_ratio0.7.npy shape=(12, 12) max|QQ^T - I|=3.93e-08
+[reproduce] cars.csv rows=6728 train_length(0.7)=4709 A.shape=(4709, 10)
+[reproduce] max||q_repro| - |Q_shipped|| (sign-free) = 0.000e+00
+[no-leakage] Q uses rows [0:4709] of 6728 = first 70.0% (train); test rows [5382:] excluded

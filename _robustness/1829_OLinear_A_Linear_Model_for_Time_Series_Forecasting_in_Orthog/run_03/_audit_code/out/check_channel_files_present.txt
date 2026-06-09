@@ -1,0 +1,26 @@
+required by OLinear_C scripts: 24
+present in dataset/:           1 -> ['weather_COV_channel_ratio0.70.npy']
+MISSING (23):
+  - ETTh1_COV_channel_ratio0.60.npy
+  - ETTh2_COV_channel_ratio0.60.npy
+  - ETTm1_COV_channel_ratio0.60.npy
+  - ETTm2_COV_channel_ratio0.60.npy
+  - ILI_COV_channel_ratio0.70.npy
+  - METR_LA_COV_channel_ratio0.70.npy
+  - PEMS03_COV_channel_ratio0.60.npy
+  - PEMS04_COV_channel_ratio0.60.npy
+  - PEMS07_COV_channel_ratio0.60.npy
+  - PEMS08_COV_channel_ratio0.60.npy
+  - SP500_COV_channel_ratio0.70.npy
+  - Solar_AL_COV_channel_ratio0.70.npy
+  - cars_COV_channel_ratio0.70.npy
+  - covid_COV_channel_ratio0.70.npy
+  - dowjones_COV_channel_ratio0.70.npy
+  - electricity_COV_channel_ratio0.70.npy
+  - exchange_rate_COV_channel_ratio0.70.npy
+  - nasdaq_COV_channel_ratio0.70.npy
+  - power_COV_channel_ratio0.70.npy
+  - traffic_COV_channel_ratio0.70.npy
+  - unemployment_COV_channel_ratio0.70.npy
+  - website_COV_channel_ratio0.70.npy
+  - wiki_mini_COV_channel_ratio0.70.npy

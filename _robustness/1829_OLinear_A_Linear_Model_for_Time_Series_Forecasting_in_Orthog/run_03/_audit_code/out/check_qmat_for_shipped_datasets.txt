@@ -1,0 +1,13 @@
+shipped dataset dirs: ['DowJones', 'ILI', 'SP500', 'cars', 'covid', 'nasdaq', 'power', 'unemployment', 'weather', 'website', 'wiki']
+
+DowJones: 8 temporal q-matrices, e.g. ['dow_jones_12_ratio0.7.npy', 'dow_jones_24_ratio0.7.npy', 'dow_jones_36_ratio0.7.npy', 'dow_jones_3_ratio0.7.npy']
+ILI: 8 temporal q-matrices, e.g. ['ILI_12_ratio0.70.npy', 'ILI_24_ratio0.70.npy', 'ILI_36_ratio0.70.npy', 'ILI_3_ratio0.70.npy']
+SP500: 8 temporal q-matrices, e.g. ['SP500_12_ratio0.7.npy', 'SP500_24_ratio0.7.npy', 'SP500_36_ratio0.7.npy', 'SP500_3_ratio0.7.npy']
+cars: 8 temporal q-matrices, e.g. ['cars_12_ratio0.7.npy', 'cars_24_ratio0.7.npy', 'cars_36_ratio0.7.npy', 'cars_3_ratio0.7.npy']
+covid: 8 temporal q-matrices, e.g. ['covid_12_ratio0.70.npy', 'covid_24_ratio0.70.npy', 'covid_36_ratio0.70.npy', 'covid_3_ratio0.70.npy']
+nasdaq: 8 temporal q-matrices, e.g. ['nasdaq_12_ratio0.70.npy', 'nasdaq_24_ratio0.70.npy', 'nasdaq_36_ratio0.70.npy', 'nasdaq_3_ratio0.70.npy']
+power: 8 temporal q-matrices, e.g. ['power_12_ratio0.7.npy', 'power_24_ratio0.7.npy', 'power_36_ratio0.7.npy', 'power_3_ratio0.7.npy']
+unemployment: 8 temporal q-matrices, e.g. ['unemployment_12_ratio0.6.npy', 'unemployment_24_ratio0.6.npy', 'unemployment_36_ratio0.6.npy', 'unemployment_3_ratio0.6.npy']
+weather: 4 temporal q-matrices, e.g. ['weather_192_ratio0.7.npy', 'weather_336_ratio0.7.npy', 'weather_720_ratio0.7.npy', 'weather_96_ratio0.7.npy']
+website: 8 temporal q-matrices, e.g. ['website_12_ratio0.7.npy', 'website_24_ratio0.7.npy', 'website_36_ratio0.7.npy', 'website_3_ratio0.7.npy']
+wiki: 8 temporal q-matrices, e.g. ['wiki_mini_12_ratio0.70.npy', 'wiki_mini_24_ratio0.70.npy', 'wiki_mini_36_ratio0.70.npy', 'wiki_mini_3_ratio0.70.npy']

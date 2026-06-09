@@ -1,0 +1,5 @@
+committed_shape,(21, 21)
+max_abs_diff_vs_train,0.000000
+max_abs_diff_vs_full,0.104889
+matches_train_only,True
+matches_full_series,False
