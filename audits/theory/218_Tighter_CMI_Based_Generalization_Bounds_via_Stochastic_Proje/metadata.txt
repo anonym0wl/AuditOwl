@@ -1,0 +1,5 @@
+paper_number: 218
+title: Tighter CMI-Based Generalization Bounds via Stochastic Projection and Quantization
+authors: Milad Sefidgaran, Kimia Nadjahi, Abdellatif Zaidi
+abstract_url: https://papers.nips.cc/paper_files/paper/2025/hash/0a5fbe6b94e9f246a8d32b631957be09-Abstract-Conference.html
+category: theory

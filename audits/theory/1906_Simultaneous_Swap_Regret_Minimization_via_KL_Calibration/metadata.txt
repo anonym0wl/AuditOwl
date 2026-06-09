@@ -1,0 +1,5 @@
+paper_number: 1906
+title: Simultaneous Swap Regret Minimization via KL-Calibration
+authors: Haipeng Luo, Spandan Senapati, Vatsal Sharan
+abstract_url: https://papers.nips.cc/paper_files/paper/2025/hash/5b38c271298813fa5c241a12f552ef5b-Abstract-Conference.html
+category: theory

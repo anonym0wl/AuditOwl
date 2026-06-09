@@ -1,0 +1,19 @@
+{
+  "folder": "5267_NeSyPr_Neurosymbolic_Proceduralization_For_Efficient_Embodie",
+  "model": "claude-opus-4-8",
+  "audit_runs": 1,
+  "tokens": {
+    "input": 7875,
+    "output": 9131,
+    "cache_write": 192341,
+    "cache_read": 961846
+  },
+  "total_tokens": 1171193,
+  "pricing_usd_per_mtok": {
+    "input": 15.0,
+    "output": 75.0,
+    "cache_write": 18.75,
+    "cache_read": 1.5
+  },
+  "estimated_cost_usd": 5.85
+}

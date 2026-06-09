@@ -1,0 +1,5 @@
+paper_number: 2788
+title: Smoothed Agnostic Learning of Halfspaces over the Hypercube
+authors: Yiwen Kou, Raghu Meka
+abstract_url: https://papers.nips.cc/paper_files/paper/2025/hash/84cb1e3b8f243e1657407c284360f46d-Abstract-Conference.html
+category: theory

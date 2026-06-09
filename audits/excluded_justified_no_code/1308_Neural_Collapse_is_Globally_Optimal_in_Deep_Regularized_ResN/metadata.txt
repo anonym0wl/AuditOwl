@@ -1,0 +1,5 @@
+paper_number: 1308
+title: Neural Collapse is Globally Optimal in Deep Regularized ResNets and Transformers
+authors: Peter Súkeník, Christoph H. Lampert, Marco Mondelli
+abstract_url: https://papers.nips.cc/paper_files/paper/2025/hash/3e18f7152b5e1696e73722dc5121b6f2-Abstract-Conference.html
+category: justified_no_code

@@ -1,0 +1,5 @@
+paper_number: 4393
+title: Self-Supervised Discovery of Neural Circuits in Spatially Patterned Neural Responses with Graph Neural Networks
+authors: Kijung Yoon
+abstract_url: https://papers.nips.cc/paper_files/paper/2025/hash/d56296582d3121ecb7fc8f6a3fb31bdf-Abstract-Conference.html
+category: justified_no_code

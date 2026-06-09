@@ -1,0 +1,5 @@
+paper_number: 459
+title: Sampling from multi-modal distributions with polynomial query complexity in fixed dimension via reverse diffusion
+authors: Adrien Vacher, Omar Chehab, Anna Korba
+abstract_url: https://papers.nips.cc/paper_files/paper/2025/hash/15f8b9a926284fa83e69bc71b79a70e3-Abstract-Conference.html
+category: theory
