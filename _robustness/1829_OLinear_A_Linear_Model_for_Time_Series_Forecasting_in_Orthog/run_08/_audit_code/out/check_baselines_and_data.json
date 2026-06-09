@@ -1,0 +1,43 @@
+{
+  "model_py_files": [
+    "OLinear.py",
+    "OLinear_C.py",
+    "OLinear_ablation_lin_design.py",
+    "OLinear_ablation_var_temp.py",
+    "OLinear_attn_var.py",
+    "OLinear_no_Q_neither.py"
+  ],
+  "registered_models_contains_only_OLinear": true,
+  "shipped_data_files": [
+    "dataset/DowJones/dowjones.csv",
+    "dataset/ILI/national_illness.csv",
+    "dataset/SP500/SP500.csv",
+    "dataset/cars/cars.csv",
+    "dataset/covid/covid.csv",
+    "dataset/nasdaq/nasdaq.csv",
+    "dataset/power/power.csv",
+    "dataset/unemployment/unemployment.csv",
+    "dataset/weather/weather.csv",
+    "dataset/website/website.csv",
+    "dataset/wiki/wiki_mini.csv"
+  ],
+  "longterm_datasets_with_data_shipped": [
+    "weather"
+  ],
+  "requirements": [
+    "pandas",
+    "scikit-learn",
+    "numpy",
+    "matplotlib",
+    "torch",
+    "fvcore",
+    "einops",
+    "thop",
+    "timm",
+    "reformer_pytorch",
+    "openpyxl",
+    "seaborn",
+    "pywt"
+  ],
+  "pywt_listed_as_pywt_not_PyWavelets": true
+}

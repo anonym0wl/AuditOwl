@@ -1,0 +1,5 @@
+registered_model_keys=OLinear,OLinear_C,OLinear_FFT,OLinear_Laguerre,OLinear_Legendre,OLinear_ablation_lin_design,OLinear_ablation_var_temp,OLinear_attn_var,OLinear_cheby,OLinear_no_Q_neither,OLinear_wavelet,OLinear_wavelet2
+referenced_OLinear_models=OLinear,OLinear_C,OLinear_FFT,OLinear_Laguerre,OLinear_Legendre,OLinear_ablation_var_temp,OLinear_attn_var,OLinear_cheby,OLinear_no_Q_neither,OLinear_wavelet,OLinear_wavelet2,OLinear_wavelet2_concat,OLinear_wavelet_concat
+UNREGISTERED (referenced by uncommented script lines but not in model_dict -> KeyError):
+  OLinear_wavelet2_concat  in  ['scripts/ablation/basis/PEMS03_orthoLinear_basis.sh', 'scripts/ablation/basis/Solar_orthoLinear_basis.sh']
+  OLinear_wavelet_concat  in  ['scripts/ablation/basis/ECL_orthoLinear_basis.sh', 'scripts/ablation/basis/PEMS03_orthoLinear_basis.sh', 'scripts/ablation/basis/Solar_orthoLinear_basis.sh']

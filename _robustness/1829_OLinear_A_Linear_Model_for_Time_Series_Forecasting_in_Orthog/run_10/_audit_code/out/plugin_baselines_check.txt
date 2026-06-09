@@ -1,0 +1,22 @@
+model/ python files:
+  model/OLinear.py
+  model/OLinear_C.py
+  model/OLinear_ablation_lin_design.py
+  model/OLinear_ablation_var_temp.py
+  model/OLinear_attn_var.py
+  model/OLinear_no_Q_neither.py
+  model/orthoLinear_basis/OLinear_FFT.py
+  model/orthoLinear_basis/OLinear_Laguerre.py
+  model/orthoLinear_basis/OLinear_Legendre.py
+  model/orthoLinear_basis/OLinear_cheby.py
+  model/orthoLinear_basis/OLinear_wavelet.py
+  model/orthoLinear_basis/OLinear_wavelet2.py
+
+registered model_dict keys: OLinear,OLinear_C,OLinear_FFT,OLinear_Laguerre,OLinear_Legendre,OLinear_ablation_lin_design,OLinear_ablation_var_temp,OLinear_attn_var,OLinear_cheby,OLinear_no_Q_neither,OLinear_wavelet,OLinear_wavelet2
+
+iTransformer: model_file=NONE ; registry_key=NONE
+PatchTST: model_file=NONE ; registry_key=NONE
+RLinear: model_file=NONE ; registry_key=NONE
+DLinear: model_file=NONE ; registry_key=NONE
+
+scripts invoking a baseline directly as --model: NONE

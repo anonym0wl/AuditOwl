@@ -1,0 +1,2 @@
+weather.csv lag=96 ratio=0.7: meanabsdiff(shipped,train_only)=6.3653e-14  meanabsdiff(shipped,full_data)=2.5503e-02  -> TRAIN-ONLY (match train)
+power.csv lag=12 ratio=0.7: meanabsdiff(shipped,train_only)=0.0000e+00  meanabsdiff(shipped,full_data)=9.2171e-03  -> TRAIN-ONLY (match train)
