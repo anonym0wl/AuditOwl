@@ -1,0 +1,19 @@
+{
+  "folder": "828_Large_language_models_can_learn_and_generalize_steganographi",
+  "model": "claude-opus-4-8",
+  "audit_runs": 1,
+  "tokens": {
+    "input": 7291,
+    "output": 9221,
+    "cache_write": 277828,
+    "cache_read": 1533851
+  },
+  "total_tokens": 1828191,
+  "pricing_usd_per_mtok": {
+    "input": 15.0,
+    "output": 75.0,
+    "cache_write": 18.75,
+    "cache_read": 1.5
+  },
+  "estimated_cost_usd": 8.31
+}
