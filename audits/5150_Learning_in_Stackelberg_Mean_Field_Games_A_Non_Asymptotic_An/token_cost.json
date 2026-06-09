@@ -1,0 +1,19 @@
+{
+  "folder": "5150_Learning_in_Stackelberg_Mean_Field_Games_A_Non_Asymptotic_An",
+  "model": "claude-opus-4-8",
+  "audit_runs": 1,
+  "tokens": {
+    "input": 7267,
+    "output": 7856,
+    "cache_write": 136828,
+    "cache_read": 1069120
+  },
+  "total_tokens": 1221071,
+  "pricing_usd_per_mtok": {
+    "input": 15.0,
+    "output": 75.0,
+    "cache_write": 18.75,
+    "cache_read": 1.5
+  },
+  "estimated_cost_usd": 4.87
+}
