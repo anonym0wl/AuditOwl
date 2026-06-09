@@ -1,0 +1,19 @@
+{
+  "folder": "543_ProRL_Prolonged_Reinforcement_Learning_Expands_Reasoning_Bou",
+  "model": "claude-opus-4-8",
+  "audit_runs": 1,
+  "tokens": {
+    "input": 7797,
+    "output": 14255,
+    "cache_write": 198598,
+    "cache_read": 1594706
+  },
+  "total_tokens": 1815356,
+  "pricing_usd_per_mtok": {
+    "input": 15.0,
+    "output": 75.0,
+    "cache_write": 18.75,
+    "cache_read": 1.5
+  },
+  "estimated_cost_usd": 7.3
+}
