@@ -1,0 +1,19 @@
+{
+  "folder": "3787_Building_3D_Representations_and_Generating_Motions_From_a_Si",
+  "model": "claude-opus-4-8",
+  "audit_runs": 1,
+  "tokens": {
+    "input": 7585,
+    "output": 6890,
+    "cache_write": 143785,
+    "cache_read": 691128
+  },
+  "total_tokens": 849388,
+  "pricing_usd_per_mtok": {
+    "input": 15.0,
+    "output": 75.0,
+    "cache_write": 18.75,
+    "cache_read": 1.5
+  },
+  "estimated_cost_usd": 4.36
+}
