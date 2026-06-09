@@ -1,0 +1,6 @@
+artefact,status
+"ewarp.py module (E*warp metric, Table 2)","ABSENT"
+"DOVER/ package (DOVER metric, Table 2)","ABSENT (external dep)"
+"VBench/ package (not a Table-2 metric)","ABSENT (external dep)"
+"pyiqa listed in requirements.txt","NO (needed by eval_metrics.py)"
+"HQ-VSR curation pipeline code (Sec 3.3/Fig 3)","ABSENT"

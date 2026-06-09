@@ -1,0 +1,54 @@
+{
+  "pairs": [
+    {
+      "eval_pred_dataset": "UDM10",
+      "eval_pred_line": 12,
+      "gt_path": "datasets/test/UDM10/GT",
+      "gt_line": 11,
+      "gt_dataset": "UDM10",
+      "mismatch": false
+    },
+    {
+      "eval_pred_dataset": "SPMCS",
+      "eval_pred_line": 24,
+      "gt_path": "datasets/test/UDM10/GT",
+      "gt_line": 23,
+      "gt_dataset": "UDM10",
+      "mismatch": true
+    },
+    {
+      "eval_pred_dataset": "YouHQ40",
+      "eval_pred_line": 36,
+      "gt_path": "datasets/test/UDM10/GT",
+      "gt_line": 35,
+      "gt_dataset": "UDM10",
+      "mismatch": true
+    },
+    {
+      "eval_pred_dataset": "RealVSR",
+      "eval_pred_line": 49,
+      "gt_path": "datasets/test/UDM10/GT",
+      "gt_line": 48,
+      "gt_dataset": "UDM10",
+      "mismatch": true
+    },
+    {
+      "eval_pred_dataset": "MVSR4x",
+      "eval_pred_line": 62,
+      "gt_path": "datasets/test/UDM10/GT",
+      "gt_line": 61,
+      "gt_dataset": "UDM10",
+      "mismatch": true
+    },
+    {
+      "eval_pred_dataset": "VideoLQ",
+      "eval_pred_line": 74,
+      "gt_path": "datasets/test/UDM10/GT",
+      "gt_line": 73,
+      "gt_dataset": "UDM10",
+      "mismatch": true
+    }
+  ],
+  "num_mismatches": 5,
+  "num_pairs": 6
+}

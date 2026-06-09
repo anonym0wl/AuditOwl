@@ -1,0 +1,41 @@
+{
+  "psnr": {
+    "pyiqa_in_eval_metrics": true
+  },
+  "ssim": {
+    "pyiqa_in_eval_metrics": true
+  },
+  "lpips": {
+    "pyiqa_in_eval_metrics": true
+  },
+  "dists": {
+    "pyiqa_in_eval_metrics": true
+  },
+  "clipiqa": {
+    "pyiqa_in_eval_metrics": true
+  },
+  "fastervqa": {
+    "pyiqa_in_eval_metrics": false,
+    "repo_mentions": [
+      [
+        "README.md",
+        269,
+        "> **TODO:** Add metric computation scripts for FasterVQA, DOVER, and $E^*_{warp}$."
+      ]
+    ],
+    "has_compute_script": false
+  },
+  "dover": {
+    "pyiqa_in_eval_metrics": false,
+    "import_line": "finetune/scripts/eval_dover.py:150 -> from DOVER.evaluate_a_set_of_videos import evaluate_set",
+    "DOVER_pkg_in_repo": false,
+    "dover_in_requirements": false
+  },
+  "ewarp": {
+    "pyiqa_in_eval_metrics": false,
+    "import_line": "finetune/scripts/eval_ewarp.py:149 -> from ewarp import Ewarp",
+    "ewarp_module_files_in_repo": [],
+    "RAFT_dir_under_scripts_exists": false,
+    "RAFT_dir_actual_location": "finetune/utils/RAFT"
+  }
+}

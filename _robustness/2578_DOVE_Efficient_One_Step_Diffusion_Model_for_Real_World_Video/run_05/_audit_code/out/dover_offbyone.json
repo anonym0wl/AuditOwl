@@ -1,0 +1,43 @@
+{
+  "repo_mapping (name -> assigned score)": {
+    "001": 0.5,
+    "002": 0.1,
+    "003": 0.2,
+    "004": 0.3,
+    "005": 0.4
+  },
+  "correct_mapping (name -> true score)": {
+    "001": 0.1,
+    "002": 0.2,
+    "003": 0.3,
+    "004": 0.4,
+    "005": 0.5
+  },
+  "n_misaligned_samples": 5,
+  "misaligned": {
+    "001": [
+      0.5,
+      0.1
+    ],
+    "002": [
+      0.1,
+      0.2
+    ],
+    "003": [
+      0.2,
+      0.3
+    ],
+    "004": [
+      0.3,
+      0.4
+    ],
+    "005": [
+      0.4,
+      0.5
+    ]
+  },
+  "avg_repo": 0.3,
+  "avg_correct": 0.3,
+  "averages_equal": true,
+  "note": "First clip (001) gets the LAST clip's score; all per-sample scores are shifted by one. Average is unchanged (same multiset)."
+}

@@ -1,0 +1,53 @@
+{
+  "n_eval_calls": 6,
+  "eval_calls": [
+    {
+      "gt": "datasets/test/UDM10/GT",
+      "pred": "results/DOVE/UDM10"
+    },
+    {
+      "gt": "datasets/test/UDM10/GT",
+      "pred": "results/DOVE/SPMCS"
+    },
+    {
+      "gt": "datasets/test/UDM10/GT",
+      "pred": "results/DOVE/YouHQ40"
+    },
+    {
+      "gt": "datasets/test/UDM10/GT",
+      "pred": "results/DOVE/RealVSR"
+    },
+    {
+      "gt": "datasets/test/UDM10/GT",
+      "pred": "results/DOVE/MVSR4x"
+    },
+    {
+      "gt": "datasets/test/UDM10/GT",
+      "pred": "results/DOVE/VideoLQ"
+    }
+  ],
+  "all_gt_point_to_UDM10": true,
+  "n_mismatched_pred_vs_gt": 5,
+  "mismatched_examples": [
+    {
+      "gt": "datasets/test/UDM10/GT",
+      "pred": "results/DOVE/SPMCS"
+    },
+    {
+      "gt": "datasets/test/UDM10/GT",
+      "pred": "results/DOVE/YouHQ40"
+    },
+    {
+      "gt": "datasets/test/UDM10/GT",
+      "pred": "results/DOVE/RealVSR"
+    },
+    {
+      "gt": "datasets/test/UDM10/GT",
+      "pred": "results/DOVE/MVSR4x"
+    },
+    {
+      "gt": "datasets/test/UDM10/GT",
+      "pred": "results/DOVE/VideoLQ"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "finetune/scripts/RAFT/ (chdir target)": false,
+  "any ewarp.py in repo": false,
+  "raft-things.pth at default --model path (finetune/scripts/models/raft-things.pth)": false,
+  "raft-things.pth actual location (finetune/utils/RAFT/raft-things.pth)": true,
+  "finetune/scripts/VBench/ (chdir target)": false,
+  "any VBench dir in repo": false,
+  "any DOVER package dir in repo": false,
+  "pyiqa in requirements.txt": false,
+  "diffusers in requirements.txt": false
+}

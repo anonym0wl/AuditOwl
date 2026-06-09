@@ -1,0 +1,76 @@
+{
+  "cases": [
+    {
+      "H": 1080,
+      "W": 1920,
+      "upscale": 4,
+      "lr_pad_h": 8,
+      "lr_pad_w": 0,
+      "sr_pad_region_h": 32,
+      "sr_pad_region_w": 0,
+      "code_removes_h": 32,
+      "code_removes_w": 0,
+      "over_crop_h": 0,
+      "over_crop_w": 0,
+      "correct": true
+    },
+    {
+      "H": 540,
+      "W": 960,
+      "upscale": 4,
+      "lr_pad_h": 4,
+      "lr_pad_w": 0,
+      "sr_pad_region_h": 16,
+      "sr_pad_region_w": 0,
+      "code_removes_h": 16,
+      "code_removes_w": 0,
+      "over_crop_h": 0,
+      "over_crop_w": 0,
+      "correct": true
+    },
+    {
+      "H": 1024,
+      "W": 436,
+      "upscale": 1,
+      "lr_pad_h": 0,
+      "lr_pad_w": 12,
+      "sr_pad_region_h": 0,
+      "sr_pad_region_w": 12,
+      "code_removes_h": 0,
+      "code_removes_w": 48,
+      "over_crop_h": 0,
+      "over_crop_w": 36,
+      "correct": false
+    },
+    {
+      "H": 720,
+      "W": 1276,
+      "upscale": 1,
+      "lr_pad_h": 0,
+      "lr_pad_w": 4,
+      "sr_pad_region_h": 0,
+      "sr_pad_region_w": 4,
+      "code_removes_h": 0,
+      "code_removes_w": 16,
+      "over_crop_h": 0,
+      "over_crop_w": 12,
+      "correct": false
+    },
+    {
+      "H": 1024,
+      "W": 512,
+      "upscale": 1,
+      "lr_pad_h": 0,
+      "lr_pad_w": 0,
+      "sr_pad_region_h": 0,
+      "sr_pad_region_w": 0,
+      "code_removes_h": 0,
+      "code_removes_w": 0,
+      "over_crop_h": 0,
+      "over_crop_w": 0,
+      "correct": true
+    }
+  ],
+  "n_overcrop_when_upscale1": 2,
+  "note": "Bug only manifests when upscale != 4 AND an input dim is not a multiple of 16."
+}

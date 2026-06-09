@@ -1,0 +1,49 @@
+{
+  "total_eval_calls_with_gt": 6,
+  "mismatched_calls": 5,
+  "rows": [
+    {
+      "gt": "datasets/test/UDM10/GT",
+      "pred": "results/DOVE/UDM10",
+      "gt_dataset": "UDM10",
+      "pred_dataset": "UDM10",
+      "mismatch": false
+    },
+    {
+      "gt": "datasets/test/UDM10/GT",
+      "pred": "results/DOVE/SPMCS",
+      "gt_dataset": "UDM10",
+      "pred_dataset": "SPMCS",
+      "mismatch": true
+    },
+    {
+      "gt": "datasets/test/UDM10/GT",
+      "pred": "results/DOVE/YouHQ40",
+      "gt_dataset": "UDM10",
+      "pred_dataset": "YouHQ40",
+      "mismatch": true
+    },
+    {
+      "gt": "datasets/test/UDM10/GT",
+      "pred": "results/DOVE/RealVSR",
+      "gt_dataset": "UDM10",
+      "pred_dataset": "RealVSR",
+      "mismatch": true
+    },
+    {
+      "gt": "datasets/test/UDM10/GT",
+      "pred": "results/DOVE/MVSR4x",
+      "gt_dataset": "UDM10",
+      "pred_dataset": "MVSR4x",
+      "mismatch": true
+    },
+    {
+      "gt": "datasets/test/UDM10/GT",
+      "pred": "results/DOVE/VideoLQ",
+      "gt_dataset": "UDM10",
+      "pred_dataset": "VideoLQ",
+      "mismatch": true
+    }
+  ],
+  "note": "Every eval_metrics.py call hardcodes --gt datasets/test/UDM10/GT; only the UDM10 call is self-consistent. The other 4 full-reference datasets (SPMCS, YouHQ40, RealVSR, MVSR4x) are scored against UDM10 GT."
+}

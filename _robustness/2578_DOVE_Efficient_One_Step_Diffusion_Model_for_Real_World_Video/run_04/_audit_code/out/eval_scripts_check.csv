@@ -1,0 +1,8 @@
+paper_artefact,repo_location,detail,status
+E*warp (Table 2),finetune/scripts/eval_ewarp.py,imports 'from ewarp import Ewarp'; module files found: NONE,MISSING_MODULE
+E*warp RAFT dir,finetune/scripts/RAFT,"eval_ewarp.py does os.chdir(os.path.join(original_dir,'RAFT')) from finetune/scripts",MISSING_DIR
+E*warp RAFT ckpt default,finetune/scripts/models/raft-things.pth,default --model in eval_ewarp.py; actual checkpoint lives at finetune/utils/RAFT/raft-things.pth=True,MISSING_PATH
+DOVER (Table 2),finetune/scripts/eval_dover.py,imports 'from DOVER.evaluate_a_set_of_videos import evaluate_set'; DOVER pkg dirs: NONE; in requirements.txt: False,MISSING_PACKAGE
+VBench (aux),finetune/scripts/eval_vbench.py,imports 'from evaluate import calculate_final' under ./VBench; VBench dirs: NONE,MISSING_PACKAGE
+FasterVQA (Table 2 + Fig 1),(none),python files referencing 'faster': NONE,NO_SCRIPT
+inference.sh eval --gt,inference.sh,pred=UDM10 gt_dataset=UDM10 match=True | pred=SPMCS gt_dataset=UDM10 match=False | pred=YouHQ40 gt_dataset=UDM10 match=False | pred=RealVSR gt_dataset=UDM10 match=False | pred=MVSR4x gt_dataset=UDM10 match=False | pred=VideoLQ gt_dataset=UDM10 match=False,GT_MISMATCH

@@ -1,0 +1,35 @@
+{
+  "buggy_mapping": {
+    "001": 0.4,
+    "002": 0.1,
+    "003": 0.2,
+    "004": 0.3
+  },
+  "correct_mapping": {
+    "001": 0.1,
+    "002": 0.2,
+    "003": 0.3,
+    "004": 0.4
+  },
+  "per_sample_mismatches": {
+    "001": [
+      0.4,
+      0.1
+    ],
+    "002": [
+      0.1,
+      0.2
+    ],
+    "003": [
+      0.2,
+      0.3
+    ],
+    "004": [
+      0.3,
+      0.4
+    ]
+  },
+  "first_name_gets_last_score": true,
+  "n_mismatched_of_n": "4/4",
+  "note": "Average over results.values() is unaffected (same multiset); per-sample names are shifted by one."
+}

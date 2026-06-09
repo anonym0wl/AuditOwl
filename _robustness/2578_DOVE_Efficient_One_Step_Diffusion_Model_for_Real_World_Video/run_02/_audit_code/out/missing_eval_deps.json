@@ -1,0 +1,10 @@
+{
+  "DOVER_pkg_under_scripts": false,
+  "DOVER_pkg_anywhere": false,
+  "RAFT_under_scripts": false,
+  "RAFT_under_utils": true,
+  "ewarp_module_in_scripts_RAFT": false,
+  "ewarp_module_anywhere": false,
+  "fastervqa_script_present": false,
+  "fastervqa_hits": []
+}
