@@ -1,0 +1,16 @@
+# Python dependencies for the NeurIPS reproducibility audit pipeline.
+# Pinned to the versions this study was run and verified on (Python 3.10.13;
+# 3.9+ supported). Install with:  pip install -r requirements.txt
+#
+# Scope: this covers the *meta-pipeline* only -- sampling, input fetch, finding
+# extraction, aggregation, and figures. The per-paper deterministic checks under
+# audits/*/_audit_code/ and audits/*/_verifier_code/ depend on each audited
+# repo's own stack (torch, scipy, sklearn, pandas, ...) and are intentionally
+# NOT pinned here; install those ad hoc when re-running a specific paper's check.
+
+requests==2.32.5         # scrape_neurips_2025.py, prepare_audit_inputs.py  -- HTTP fetch
+beautifulsoup4==4.14.3   # scrape_neurips_2025.py, prepare_audit_inputs.py  -- HTML parsing
+PyMuPDF==1.27.2.2        # prepare_audit_inputs.py  -- paper.pdf -> paper_text.txt sidecar (imported as `fitz`)
+PyYAML==6.0.1            # scripts/extract_findings.py  -- parse YAML finding blocks
+numpy==1.26.4            # _summary/aggregate.py inputs + build_*_figure.py
+matplotlib==3.9.0        # _summary/ and _robustness/ figure scripts

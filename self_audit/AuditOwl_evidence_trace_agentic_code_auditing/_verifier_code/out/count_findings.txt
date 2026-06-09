@@ -1,0 +1,28 @@
+numbered paper dirs: 100
+theory dirs: 4  excluded_justified_no_code dirs: 2
+numbered with findings.json (code present): 87
+numbered without findings.json (no code): 13
+
+=== GROSS findings (all, pre-drop): 606 ===
+=== SURVIVING (not dropped by verifier/supplement/provenance): 605 ===
+dropped: 1
+
+by_category (GROSS): {'missing': 307, 'difference': 152, 'bug': 96, 'methodology': 51}
+by_category (SURV): {'missing': 307, 'difference': 151, 'bug': 96, 'methodology': 51}
+by_severity (GROSS): {'high': 141, 'low': 219, 'medium': 246}
+by_severity (SURV): {'high': 141, 'low': 218, 'medium': 246}
+
+=== VERIFIER: n_verified=606  verdicts={'keep': 603, 'lowered': 2, 'reject': 1}  survived(keep+lowered)=605 ===
+
+=== evidence trail (denominator N=606) ===
+quote-anchored: 605  (99.8%)
+cites code location: 519  (85.6%)
+backed by check_script: 315  (52.0%)
+
+=== per-paper (papers with findings, n=87) ===
+total findings over these papers: 606
+mean per paper: 6.966
+median: 7  min: 2  max: 13
+mean over 100 papers (incl no-code as 0): 6.060
+mean over 87 code papers: 6.966
+surviving mean over 87: 6.954

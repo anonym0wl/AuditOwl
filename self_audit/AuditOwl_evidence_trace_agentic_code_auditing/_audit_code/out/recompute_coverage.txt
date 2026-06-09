@@ -1,0 +1,14 @@
+=== RECOMPUTED (read-only re-parse of audit.md tables) ===
+  n_papers: recomputed=100  committed=100  match=True
+  n_nocode_papers: recomputed=13  committed=13  match=True
+  n_artefacts: recomputed=1009  committed=1009  match=True
+  totals_by_status recomputed: {'missing': 454, 'bug': 20, 'mismatch': 73, 'partial': 66, 'present': 334, 'na': 62}
+  totals_by_status committed:  {'missing': 454, 'bug': 20, 'mismatch': 73, 'partial': 66, 'present': 334, 'na': 62}
+  median_missing_frac recomputed=0.4444 committed=0.4444
+
+=== FUNNEL (from recomputed real papers) ===
+  empirical papers: 100
+  source code present: 87
+  >50% traced (missing_frac<0.5): 47
+  every artifact traced (missing_frac==0): 9
+  mean missing_frac over real: 0.4341

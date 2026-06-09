@@ -1,0 +1,27 @@
+{
+  "n_papers": 50,
+  "n_findings": 323,
+  "by_category": {
+    "missing": 170,
+    "difference": 81,
+    "bug": 48,
+    "methodology": 24
+  },
+  "by_severity": {
+    "high": 79,
+    "low": 119,
+    "medium": 125
+  },
+  "by_confidence": {
+    "high": 257,
+    "medium": 58,
+    "low": 8
+  },
+  "by_status": {
+    "finding": 294,
+    "question": 29
+  },
+  "papers_no_code_released": 8,
+  "papers_with_high_severity": 41,
+  "mean_findings_per_paper": 6.46
+}

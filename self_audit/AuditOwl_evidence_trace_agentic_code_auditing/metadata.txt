@@ -1,0 +1,5 @@
+paper_number: self-audit (this repository's own paper)
+title: Evaluating the evidence trace of NeurIPS 2025 contributions with agentic code auditing
+authors: Anonymous (double-blind submission, under review at TMLR)
+abstract_url: https://github.com/anonym0wl/AuditOwl
+category: empirical

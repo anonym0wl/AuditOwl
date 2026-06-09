@@ -1,0 +1,179 @@
+{
+  "schema_version": "1",
+  "audit": "AuditOwl_evidence_trace_agentic_code_auditing",
+  "audit_md": "self_audit/AuditOwl_evidence_trace_agentic_code_auditing/audit.md",
+  "generated_at": "2026-06-05T11:20:54.903167+00:00",
+  "findings": [
+    {
+      "id": "AuditOwl_evidence_trace_agentic_code_auditing/aggregate-funnel-needs-codetree",
+      "category": "bug",
+      "topic": "result traceability / reproducibility scope",
+      "title": "aggregate.py funnel + scorecard rows can't regenerate from the public release (need git-ignored code/ trees)",
+      "severity": "medium",
+      "confidence": "high",
+      "status": "finding",
+      "file": "_summary/aggregate.py",
+      "line_start": 480,
+      "line_end": 484,
+      "quote": "has_code = len(repos) > 0 and prov_core != \"no\"\ncl = d / \"code_links.txt\"\nurl_ok = cl.exists() and bool(cl.read_text().strip())\ninst_ok = any(repo_has_install(r) for r in repos)\nrun_ok = any(repo_has_runnable(r) for r in repos)\n",
+      "claim": "aggregate.py derives has_code / inst_ok / run_ok (and thus its funnel stages 'Source code present'..'Runnable entrypoint' and the scorecard install/runnable rows) by scanning per-paper code/<owner>__<repo>/ trees, but those upstream trees are git-ignored (`.gitignore:16` `**/code/`) and absent from the released repo, so `repos` is empty for every paper.",
+      "concern": "Re-running `python _summary/aggregate.py` on the public release collapses the funnel to 100→0→0→0→0→0 and cannot reproduce the committed figure_data.json funnel [100,87,66,62,45,3] or the Fig 4 install/runnable scorecard percentages (66%/78%); those figure numbers are frozen in figure_data.json and not independently reproducible from released artefacts.",
+      "resolution": "Either commit the per-paper repo fingerprints aggregate.py needs (install-file/runnable booleans, code-file counts) as data so the funnel/scorecard regenerate offline, or document in the README that aggregate.py's environment-readiness rows require the upstream code/ trees while the coverage funnel (print_funnel.py) and finding counts are release-reproducible.",
+      "cross_refs": [
+        "stale-stats-funnel-json",
+        "trace-clean-9-vs-6"
+      ],
+      "check_script": "_audit_code/recompute_coverage.py",
+      "paper_ref": "Figure 1 funnel; Figure 4 scorecard rows 'Install/environment' and 'Runnable entrypoint'",
+      "validator_pass": {
+        "quote_match": true,
+        "control_flow": true,
+        "condition_satisfiable": true
+      },
+      "id_local": "aggregate-funnel-needs-codetree",
+      "audit": "AuditOwl_evidence_trace_agentic_code_auditing",
+      "audit_md_line": 87
+    },
+    {
+      "id": "AuditOwl_evidence_trace_agentic_code_auditing/stale-stats-funnel-json",
+      "category": "difference",
+      "topic": "reproducibility hygiene / stale artefacts",
+      "title": "Committed stats.json / funnel.json hold stale 50-paper numbers that contradict the paper",
+      "severity": "low",
+      "confidence": "high",
+      "status": "finding",
+      "file": "_summary/data/stats.json",
+      "line_start": 2,
+      "line_end": 3,
+      "quote": "\"n_papers\": 50,\n\"n_findings\": 323,\n",
+      "claim": "_summary/data/stats.json (n_papers=50, n_findings=323) and _summary/data/funnel.json (stage counts 50/42/24/20/4, total 50) are committed but describe an earlier 50-paper run; grep finds no .py that reads OR writes either file, so they feed no figure or headline number.",
+      "concern": "A reader inspecting _summary/data/ sees two top-level summary files asserting 50 papers / 323 findings, flatly contradicting the paper's 100 papers / 606 findings, with nothing flagging them as superseded.",
+      "resolution": "Delete the orphaned stats.json/funnel.json or regenerate them from the current 100-paper audit set (the live equivalents are figure_data.json and print_funnel.py's coverage_status.json, both of which carry the correct numbers).",
+      "cross_refs": [
+        "aggregate-funnel-needs-codetree"
+      ],
+      "check_script": "_audit_code/count_findings.py",
+      "paper_ref": "Abstract '605 discrepancies'; Figure 1 funnel",
+      "validator_pass": {
+        "quote_match": true,
+        "control_flow": true,
+        "condition_satisfiable": true
+      },
+      "id_local": "stale-stats-funnel-json",
+      "audit": "AuditOwl_evidence_trace_agentic_code_auditing",
+      "audit_md_line": 118
+    },
+    {
+      "id": "AuditOwl_evidence_trace_agentic_code_auditing/trace-clean-9-vs-6",
+      "category": "difference",
+      "topic": "result traceability / definition",
+      "title": "Two co-existing 'all results trace cleanly' counts (9 vs 6 papers); paper uses the looser 9",
+      "severity": "low",
+      "confidence": "high",
+      "status": "finding",
+      "file": "_summary/print_funnel.py",
+      "line_start": 28,
+      "line_end": 29,
+      "quote": "(sum(p[\"missing_frac\"] < 0.5 for p in real),   \"producing code found for >50% of traced artifacts\"),\n(sum(p[\"missing_frac\"] == 0.0 for p in real),  \"producing code found for every traced artifact\"),\n",
+      "claim": "print_funnel.py defines 'every result traces' as a paper whose audit.md coverage table has zero MISSING rows (missing_frac==0.0) → 9 papers (the paper's Fig 1 / abstract '9%'); aggregate.py and _summary/SUMMARY.md define it via a topic-anchored surviving-finding gate (no 'result traceability' missing finding) → 6 papers (figure_data.json funnel stage = 3 once also gated on install+runnable; SUMMARY reports 6/87).",
+      "concern": "The same English phrase ('all published results trace cleanly') maps to two different numbers in the repo (9 by coverage table, 6 by finding topic), and the abstract/Figure 1 silently use the more favourable 9 while the README headline uses 6; a reader cannot tell which definition produced the headline without reading both scripts.",
+      "resolution": "State in the paper which operationalization '9%' uses (coverage-table missing_frac==0 over 87 source-present papers) and note the stricter topic-anchored count is 6/87, so the two are not conflated.",
+      "cross_refs": [
+        "aggregate-funnel-needs-codetree"
+      ],
+      "check_script": "_audit_code/recompute_coverage.py",
+      "paper_ref": "Abstract 'for just 9% all analyzed published findings trace cleanly'; Figure 1 ('9')",
+      "validator_pass": {
+        "quote_match": true,
+        "control_flow": true,
+        "condition_satisfiable": true
+      },
+      "id_local": "trace-clean-9-vs-6",
+      "audit": "AuditOwl_evidence_trace_agentic_code_auditing",
+      "audit_md_line": 144
+    },
+    {
+      "id": "AuditOwl_evidence_trace_agentic_code_auditing/code-located-pct-84-vs-86",
+      "category": "difference",
+      "topic": "evidence-trail reporting",
+      "title": "Paper §4.1 says 84% of findings cite source code; the repo's own metric is 86% (519/606)",
+      "severity": "low",
+      "confidence": "high",
+      "status": "finding",
+      "file": "paper.pdf",
+      "quote": "For 84% of the 606 discrepancies, the cited evidence is a line of the authors’ source code that a verifier confirmed is reachable rather than dead code\n",
+      "claim": "The aggregate.py evidence_kind=='code' share is 519/606 = 85.6% (README rounds it to 86%, README.md:12). The paper §4.1 reports 84%, evidently a stricter subset — code-located AND verifier-confirmed-reachable (code ∧ validator_pass.control_flow=true = 501/606 = 82.7%) — but the text does not state the stricter denominator, so the same quantity reads as 84% in the paper and 86% in the README.",
+      "concern": "An internal inconsistency (84% in the paper, 86% in the README) on the same evidence-trail statistic, with the paper's stricter '84%' definition unstated; minor but it is a headline evidence-quality number.",
+      "resolution": "Reconcile the paper's 84% and the README's 86%: either report the same evidence_kind=='code' figure (86%) in both, or define the 'verifier-confirmed-reachable' subset (code ∧ control_flow) and cite the script that computes it.",
+      "cross_refs": [],
+      "check_script": "_audit_code/count_findings.py",
+      "paper_ref": "Section 4.1, '84% of the 606 discrepancies'",
+      "validator_pass": {
+        "quote_match": true,
+        "control_flow": true,
+        "condition_satisfiable": true
+      },
+      "id_local": "code-located-pct-84-vs-86",
+      "audit": "AuditOwl_evidence_trace_agentic_code_auditing",
+      "audit_md_line": 170,
+      "line_start": null,
+      "line_end": null
+    },
+    {
+      "id": "AuditOwl_evidence_trace_agentic_code_auditing/readme-cost-vs-data",
+      "category": "difference",
+      "topic": "cost accounting",
+      "title": "README per-paper cost ($13.32/$12.16/$1,332) disagrees with committed compute_cost.json ($14.09/$12.73/$1,409)",
+      "severity": "low",
+      "confidence": "high",
+      "status": "finding",
+      "file": "README.md",
+      "line_start": 256,
+      "line_end": 257,
+      "quote": "- ~\\$13 per paper for the audit pass (median \\$12.16, mean \\$13.32, \\$1,332 total\n  over all 100 papers; the two-stage verification adds ~\\$2/paper, \\$214 total)\n",
+      "claim": "README quotes mean $13.32 / median $12.16 / $1,332 total audit cost over 100 papers, but _summary/data/compute_cost.json (the committed source) totals audit_cost_usd = $1,409.09 (mean $14.09, median $12.73 over 100 papers), and the verify total is $232.69 not $214.",
+      "concern": "The README cost figures predate or diverge from the committed compute_cost.json by ~$77 (audit) / ~$19 (verify); the paper body itself states no per-paper dollar amount (only 'reasonable cost' + token counts, which DO reconcile), so no paper claim is affected, but the repo's two cost statements disagree.",
+      "resolution": "Regenerate the README cost line from the current compute_cost.json (or note the pricing/date the README figures used); the paper's token-based cost claims (6.9M/paper, 509M+94M total) are unaffected and reconcile exactly.",
+      "cross_refs": [],
+      "check_script": "_audit_code/count_findings.py",
+      "paper_ref": "Section 4.3 'reasonable cost' (paper states no $ figure); README cost profile",
+      "validator_pass": {
+        "quote_match": true,
+        "control_flow": true,
+        "condition_satisfiable": true
+      },
+      "id_local": "readme-cost-vs-data",
+      "audit": "AuditOwl_evidence_trace_agentic_code_auditing",
+      "audit_md_line": 193
+    },
+    {
+      "id": "AuditOwl_evidence_trace_agentic_code_auditing/coverage-heuristic-text-classifier",
+      "category": "methodology",
+      "topic": "result traceability / denominator construction",
+      "title": "Headline coverage numbers (1009 artifacts, 44% missing, funnel 9) rest on a regex classifier over free-text Status cells",
+      "severity": "low",
+      "confidence": "high",
+      "status": "finding",
+      "file": "_summary/build_coverage_figure.py",
+      "line_start": 95,
+      "line_end": 99,
+      "quote": "def classify(art: str, raw: str) -> str | None:\n    \"\"\"Map a (artefact, Status) row to one of six outcome buckets.\n\n    The Status cells are free text written by the auditor, so this is heuristic.\n    Ordering is load-bearing:\n",
+      "claim": "The 1,009-artifact denominator, the 44%-missing rate, and the 9-papers-clean funnel are all produced by parsing each audit.md coverage table and running classify() — a hand-tuned cascade of substring rules ('leads_missing', RUN_FAIL keywords, NA_CUES) over Status cells the LLM auditor wrote in free text; the auditor also self-selected which artefacts to trace (the denominator is explicitly auditor-selected, skewed to suspect claims, per the script docstring and Fig 3 caption).",
+      "concern": "Two layers of subjectivity sit under the headline coverage funnel — auditor-chosen denominators and a heuristic text classifier — so the precise 44%/9 values are sensitive to wording and rule order; the paper does acknowledge the auditor-selected denominator (Fig 3 caption) but not the classifier's heuristic mapping.",
+      "resolution": "Report a robustness check on classify() (e.g. hand-label a sample of Status cells and give the classifier's agreement), or have the auditor emit a structured status enum per artefact instead of free text, so the coverage counts do not depend on regex over prose.",
+      "cross_refs": [
+        "trace-clean-9-vs-6"
+      ],
+      "check_script": "_audit_code/recompute_coverage.py",
+      "paper_ref": "Figure 3 caption ('the denominator is the auditor-selected set'); Discussion '44%'",
+      "validator_pass": {
+        "quote_match": true,
+        "control_flow": true,
+        "condition_satisfiable": true
+      },
+      "id_local": "coverage-heuristic-text-classifier",
+      "audit": "AuditOwl_evidence_trace_agentic_code_auditing",
+      "audit_md_line": 221
+    }
+  ]
+}

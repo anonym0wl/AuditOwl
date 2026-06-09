@@ -1,0 +1,25 @@
+{
+  "stages": [
+    {
+      "label": "Code URL linked",
+      "count": 50
+    },
+    {
+      "label": "Source code present",
+      "count": 42
+    },
+    {
+      "label": "Install / environment spec",
+      "count": 24
+    },
+    {
+      "label": "Runnable entrypoint (train / eval / run script)",
+      "count": 20
+    },
+    {
+      "label": "No high-severity blocker to headline numbers (per audit)",
+      "count": 4
+    }
+  ],
+  "total": 50
+}
