@@ -1,0 +1,19 @@
+{
+  "folder": "840_Enhancing_LLM_Watermark_Resilience_Against_Both_Scrubbing_an",
+  "model": "claude-opus-4-8",
+  "audit_runs": 1,
+  "tokens": {
+    "input": 7537,
+    "output": 9838,
+    "cache_write": 173789,
+    "cache_read": 1756199
+  },
+  "total_tokens": 1947363,
+  "pricing_usd_per_mtok": {
+    "input": 15.0,
+    "output": 75.0,
+    "cache_write": 18.75,
+    "cache_read": 1.5
+  },
+  "estimated_cost_usd": 6.74
+}
